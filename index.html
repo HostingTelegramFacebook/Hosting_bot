@@ -132,6 +132,200 @@
             padding: 0 20px;
         }
         
+        /* Auth Container */
+        .auth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 20px;
+        }
+        
+        .auth-box {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 40px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+        }
+        
+        .auth-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .auth-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 3px solid var(--primary);
+            background: var(--card-bg);
+            padding: 8px;
+            margin: 0 auto 20px;
+        }
+        
+        .auth-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .auth-title {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .auth-subtitle {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        /* Auth Tabs */
+        .auth-tabs {
+            display: flex;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: var(--radius-sm);
+            padding: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .auth-tab {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+        
+        .auth-tab.active {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Auth Forms */
+        .auth-form {
+            display: none;
+        }
+        
+        .auth-form.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 14px;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            transition: var(--transition);
+            background: var(--card-bg);
+            color: var(--text-color);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .auth-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .auth-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .auth-footer {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .auth-footer p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        
+        .switch-auth {
+            color: var(--primary);
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        /* Alert */
+        .alert {
+            padding: 15px;
+            border-radius: var(--radius-sm);
+            margin-bottom: 20px;
+            display: none;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .alert-success {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success);
+        }
+        
+        .alert-error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+        }
+        
+        /* Dashboard - will be hidden initially */
+        .dashboard-container {
+            display: none;
+        }
+        
         /* Sidebar */
         .sidebar {
             position: fixed;
@@ -503,11 +697,6 @@
             animation: fadeIn 0.5s ease;
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
         .section-header {
             margin-bottom: 30px;
             text-align: center;
@@ -877,6 +1066,10 @@
         }
         
         @media (max-width: 768px) {
+            .auth-box {
+                padding: 30px 20px;
+            }
+            
             .main-header {
                 flex-direction: column;
                 gap: 15px;
@@ -919,6 +1112,10 @@
                 padding: 0 15px;
             }
             
+            .auth-box {
+                padding: 25px 15px;
+            }
+            
             .section {
                 padding: 20px;
             }
@@ -950,390 +1147,452 @@
     </style>
 </head>
 <body class="ar">
-    <!-- Loading Screen -->
-    <div id="loadingScreen" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--bg-color); display: flex; justify-content: center; align-items: center; z-index: 9999; transition: opacity 0.5s ease;">
-        <div style="text-align: center;">
-            <div class="logo-img-sidebar" style="margin: 0 auto 20px; width: 80px; height: 80px;">
-                <img src="./favicon.png" alt="HostMaster Pro Logo">
+    <!-- Auth Container -->
+    <div class="auth-container" id="authContainer">
+        <div class="auth-box">
+            <div class="auth-header">
+                <div class="auth-logo">
+                    <img src="./favicon.png" alt="HostMaster Pro Logo">
+                </div>
+                <h1 class="auth-title">HostMaster Pro</h1>
+                <p class="auth-subtitle">منصة استضافة بوتات تليجرام المجانية</p>
             </div>
-            <div class="logo-text-sidebar" style="font-size: 28px; margin-bottom: 10px;">HostMaster Pro</div>
-            <div style="color: var(--text-secondary);">جاري تحميل النظام...</div>
+            
+            <!-- Alert -->
+            <div class="alert" id="authAlert">
+                <i class="fas fa-info-circle"></i>
+                <span id="authAlertText"></span>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">تسجيل الدخول</button>
+                <button class="auth-tab" data-tab="register">إنشاء حساب</button>
+            </div>
+            
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm">
+                <div class="form-group">
+                    <label class="form-label">اسم المستخدم</label>
+                    <input type="text" class="form-input" id="loginUsername" placeholder="أدخل اسم المستخدم" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-input" id="loginPassword" placeholder="أدخل كلمة المرور" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    تسجيل الدخول
+                </button>
+            </form>
+            
+            <!-- Register Form -->
+            <form class="auth-form" id="registerForm">
+                <div class="form-group">
+                    <label class="form-label">اسم المستخدم</label>
+                    <input type="text" class="form-input" id="registerUsername" placeholder="اختر اسم مستخدم" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-input" id="registerPassword" placeholder="كلمة مرور قوية (6 أحرف على الأقل)" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">تأكيد كلمة المرور</label>
+                    <input type="password" class="form-input" id="registerConfirmPassword" placeholder="أعد إدخال كلمة المرور" required>
+                </div>
+                
+                <button type="submit" class="auth-btn">
+                    <i class="fas fa-user-plus"></i>
+                    إنشاء حساب
+                </button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>بواسطة <strong>HostMaster Pro</strong> &copy; 2026</p>
+            </div>
         </div>
     </div>
     
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <a href="#" class="logo-sidebar">
-                <div class="logo-img-sidebar">
-                    <img src="./favicon.png" alt="HostMaster Pro Logo">
-                </div>
-                <div class="logo-text-sidebar">HostMaster Pro</div>
-            </a>
-            <button class="close-sidebar" id="closeSidebar">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        
-        <nav class="sidebar-nav">
-            <div class="nav-group">
-                <div class="nav-group-title">القائمة الرئيسية</div>
-                <button class="nav-item active" data-section="dashboard">
-                    <div class="nav-icon"><i class="fas fa-home"></i></div>
-                    <span>🏠 الرئيسية</span>
-                </button>
-                <button class="nav-item" data-section="files">
-                    <div class="nav-icon"><i class="fas fa-folder"></i></div>
-                    <span>📁 الملفات</span>
-                </button>
-                <button class="nav-item" data-section="control">
-                    <div class="nav-icon"><i class="fas fa-cogs"></i></div>
-                    <span>⚙️ التحكم</span>
-                </button>
-                <button class="nav-item" data-section="settings">
-                    <div class="nav-icon"><i class="fas fa-sliders-h"></i></div>
-                    <span>⚡ الإعدادات</span>
+    <!-- Dashboard Container -->
+    <div class="dashboard-container" id="dashboardContainer">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="logo-sidebar">
+                    <div class="logo-img-sidebar">
+                        <img src="./favicon.png" alt="HostMaster Pro Logo">
+                    </div>
+                    <div class="logo-text-sidebar">HostMaster Pro</div>
+                </a>
+                <button class="close-sidebar" id="closeSidebar">
+                    <i class="fas fa-times"></i>
                 </button>
             </div>
             
-            <div class="nav-group">
-                <div class="nav-group-title">روابط مهمة</div>
-                <a href="./privacy.html" class="nav-item">
-                    <div class="nav-icon"><i class="fas fa-shield-alt"></i></div>
-                    <span>🔒 سياسة الخصوصية</span>
-                </a>
-                <a href="#" class="nav-item">
-                    <div class="nav-icon"><i class="fas fa-question-circle"></i></div>
-                    <span>❓ الدعم الفني</span>
-                </a>
-                <button class="nav-item" id="logoutBtn">
-                    <div class="nav-icon"><i class="fas fa-sign-out-alt"></i></div>
-                    <span>🚪 تسجيل الخروج</span>
-                </button>
-            </div>
-        </nav>
-    </aside>
+            <nav class="sidebar-nav">
+                <div class="nav-group">
+                    <div class="nav-group-title">القائمة الرئيسية</div>
+                    <button class="nav-item active" data-section="dashboard">
+                        <div class="nav-icon"><i class="fas fa-home"></i></div>
+                        <span>🏠 الرئيسية</span>
+                    </button>
+                    <button class="nav-item" data-section="files">
+                        <div class="nav-icon"><i class="fas fa-folder"></i></div>
+                        <span>📁 الملفات</span>
+                    </button>
+                    <button class="nav-item" data-section="control">
+                        <div class="nav-icon"><i class="fas fa-cogs"></i></div>
+                        <span>⚙️ التحكم</span>
+                    </button>
+                    <button class="nav-item" data-section="settings">
+                        <div class="nav-icon"><i class="fas fa-sliders-h"></i></div>
+                        <span>⚡ الإعدادات</span>
+                    </button>
+                </div>
+                
+                <div class="nav-group">
+                    <div class="nav-group-title">روابط مهمة</div>
+                    <a href="./privacy.html" class="nav-item">
+                        <div class="nav-icon"><i class="fas fa-shield-alt"></i></div>
+                        <span>🔒 سياسة الخصوصية</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon"><i class="fas fa-question-circle"></i></div>
+                        <span>❓ الدعم الفني</span>
+                    </a>
+                    <button class="nav-item" id="logoutBtn">
+                        <div class="nav-icon"><i class="fas fa-sign-out-alt"></i></div>
+                        <span>🚪 تسجيل الخروج</span>
+                    </button>
+                </div>
+            </nav>
+        </aside>
 
-    <!-- Main Content -->
-    <main class="main-content" id="mainContent">
-        <!-- Header -->
-        <header class="main-header">
-            <div class="header-left">
-                <button class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="header-title">
-                    <span id="currentSectionTitle">لوحة التحكم</span>
-                </div>
-            </div>
-            
-            <div class="header-actions">
-                <div class="theme-toggle" title="تبديل السمة">
-                    <input type="checkbox" id="themeSwitch">
-                    <label for="themeSwitch"></label>
-                </div>
-                <div class="user-menu">
-                    <button class="user-btn" id="userBtn">
-                        <div class="user-avatar" id="userAvatar">م</div>
-                        <span id="userName">مستخدم</span>
+        <!-- Main Content -->
+        <main class="main-content" id="mainContent">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
                     </button>
-                </div>
-            </div>
-        </header>
-        
-        <!-- Dashboard Section -->
-        <section id="dashboardSection" class="section active">
-            <div class="section-header">
-                <h1 class="section-title">
-                    <i class="fas fa-chart-line"></i>
-                    لوحة التحكم الرئيسية
-                </h1>
-                <p class="section-subtitle">
-                    مرحباً بك في منصة HostMaster Pro - منصة استضافة بوتات تليجرام المجانية المتكاملة
-                </p>
-            </div>
-            
-            <!-- Stats Cards -->
-            <div class="dashboard-cards">
-                <div class="dashboard-card">
-                    <div class="card-icon">
-                        <i class="fas fa-hdd"></i>
+                    <div class="header-title">
+                        <span id="currentSectionTitle">لوحة التحكم</span>
                     </div>
-                    <div class="card-title">مساحة التخزين</div>
-                    <div class="card-value" id="storageUsage">0%</div>
-                    <div class="card-desc">من إجمالي 10GB متاحة</div>
                 </div>
                 
-                <div class="dashboard-card">
-                    <div class="card-icon">
-                        <i class="fas fa-file-code"></i>
+                <div class="header-actions">
+                    <div class="theme-toggle" title="تبديل السمة">
+                        <input type="checkbox" id="themeSwitch">
+                        <label for="themeSwitch"></label>
                     </div>
-                    <div class="card-title">الملفات المرفوعة</div>
-                    <div class="card-value" id="fileCount">0</div>
-                    <div class="card-desc">ملف نشط في النظام</div>
-                </div>
-                
-                <div class="dashboard-card">
-                    <div class="card-icon">
-                        <i class="fas fa-server"></i>
+                    <div class="user-menu">
+                        <button class="user-btn" id="userBtn">
+                            <div class="user-avatar" id="userAvatar">م</div>
+                            <span id="userName">مستخدم</span>
+                        </button>
                     </div>
-                    <div class="card-title">حالة النظام</div>
-                    <div class="card-value" style="color: var(--success);">نشط 🟢</div>
-                    <div class="card-desc">يعمل بكفاءة عالية</div>
                 </div>
-            </div>
+            </header>
             
-            <!-- Quick Actions -->
-            <div class="section-header mt-30">
-                <h2 class="section-title">
-                    <i class="fas fa-bolt"></i>
-                    إجراءات سريعة
-                </h2>
-            </div>
-            
-            <div class="control-panel">
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <div class="control-title">رفع ملفات</div>
-                    <div class="control-desc">رفع ملفات Python، JavaScript، ZIP</div>
-                    <button class="btn btn-primary btn-block" onclick="switchSection('files')">
-                        <i class="fas fa-upload"></i> رفع ملفات
-                    </button>
-                </div>
-                
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="control-title">تشغيل البوت</div>
-                    <div class="control-desc">بدء تشغيل بوت التليجرام</div>
-                    <button class="btn btn-success btn-block" onclick="startBot()">
-                        <i class="fas fa-play"></i> تشغيل الآن
-                    </button>
-                </div>
-                
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <div class="control-title">الإعدادات</div>
-                    <div class="control-desc">تعديل إعدادات الحساب</div>
-                    <button class="btn btn-primary btn-block" onclick="switchSection('settings')">
-                        <i class="fas fa-sliders-h"></i> الذهاب للإعدادات
-                    </button>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Files Section -->
-        <section id="filesSection" class="section">
-            <div class="section-header">
-                <h1 class="section-title">
-                    <i class="fas fa-folder-open"></i>
-                    إدارة الملفات
-                </h1>
-                <p class="section-subtitle">
-                    قم برفع وإدارة ملفات بوت التليجرام والملفات البرمجية
-                </p>
-            </div>
-            
-            <!-- Upload Zone -->
-            <div class="upload-zone" id="uploadZone">
-                <div class="upload-icon">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                </div>
-                <div class="upload-text">
-                    <h3>اسحب وأفلت الملفات هنا</h3>
-                    <p>أو انقر لاختيار الملفات من جهازك</p>
-                    <p style="font-size: 14px; color: var(--text-secondary);">
-                        المدعوم: .py .js .zip .txt .json .env
+            <!-- Dashboard Section -->
+            <section id="dashboardSection" class="section active">
+                <div class="section-header">
+                    <h1 class="section-title">
+                        <i class="fas fa-chart-line"></i>
+                        لوحة التحكم الرئيسية
+                    </h1>
+                    <p class="section-subtitle">
+                        مرحباً بك في منصة HostMaster Pro - منصة استضافة بوتات تليجرام المجانية المتكاملة
                     </p>
                 </div>
-                <input type="file" id="fileInput" multiple class="hidden">
-            </div>
-            
-            <!-- Files Grid -->
-            <div class="files-container" id="filesContainer">
-                <!-- Files will be loaded here -->
-            </div>
-            
-            <!-- No Files Message -->
-            <div id="noFilesMessage" class="text-center mt-30" style="display: none;">
-                <i class="fas fa-folder-open" style="font-size: 60px; color: var(--border-color);"></i>
-                <h3 style="color: var(--text-secondary); margin-top: 15px;">لا توجد ملفات مرفوعة</h3>
-                <p style="color: var(--text-secondary);">ابدأ برفع أول ملف من خلال منطقة الرفع بالأعلى</p>
-            </div>
-        </section>
-        
-        <!-- Control Panel Section -->
-        <section id="controlSection" class="section">
-            <div class="section-header">
-                <h1 class="section-title">
-                    <i class="fas fa-cogs"></i>
-                    لوحة التحكم
-                </h1>
-                <p class="section-subtitle">
-                    إدارة وتشغيل بوت التليجرام والتحكم الكامل في العمليات
-                </p>
-            </div>
-            
-            <!-- Control Actions -->
-            <div class="control-panel">
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-play"></i>
+                
+                <!-- Stats Cards -->
+                <div class="dashboard-cards">
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hdd"></i>
+                        </div>
+                        <div class="card-title">مساحة التخزين</div>
+                        <div class="card-value" id="storageUsage">0%</div>
+                        <div class="card-desc">من إجمالي 10GB متاحة</div>
                     </div>
-                    <div class="control-title">تشغيل البوت</div>
-                    <div class="control-desc">بدء تشغيل ملف البوت الرئيسي</div>
-                    <button class="btn btn-success btn-block" id="startBotBtn">
-                        <i class="fas fa-play"></i> بدء التشغيل
-                    </button>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <div class="card-title">الملفات المرفوعة</div>
+                        <div class="card-value" id="fileCount">0</div>
+                        <div class="card-desc">ملف نشط في النظام</div>
+                    </div>
+                    
+                    <div class="dashboard-card">
+                        <div class="card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="card-title">حالة النظام</div>
+                        <div class="card-value" style="color: var(--success);">نشط 🟢</div>
+                        <div class="card-desc">يعمل بكفاءة عالية</div>
+                    </div>
                 </div>
                 
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-stop"></i>
-                    </div>
-                    <div class="control-title">إيقاف البوت</div>
-                    <div class="control-desc">إيقاف جميع عمليات البوت</div>
-                    <button class="btn btn-danger btn-block" id="stopBotBtn">
-                        <i class="fas fa-stop"></i> إيقاف التشغيل
-                    </button>
+                <!-- Quick Actions -->
+                <div class="section-header mt-30">
+                    <h2 class="section-title">
+                        <i class="fas fa-bolt"></i>
+                        إجراءات سريعة
+                    </h2>
                 </div>
                 
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <div class="control-title">تثبيت المكتبات</div>
-                    <div class="control-desc">تثبيت مكتبات Python المطلوبة</div>
-                    <button class="btn btn-primary btn-block" id="installLibsBtn">
-                        <i class="fas fa-download"></i> تثبيت الآن
-                    </button>
-                </div>
-                
-                <div class="control-card">
-                    <div class="control-icon">
-                        <i class="fas fa-bug"></i>
-                    </div>
-                    <div class="control-title">عرض الأخطاء</div>
-                    <div class="control-desc">عرض سجل الأخطاء والتحذيرات</div>
-                    <button class="btn btn-warning btn-block" id="showErrorsBtn">
-                        <i class="fas fa-bug"></i> عرض الأخطاء
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Terminal -->
-            <div class="terminal">
-                <div class="terminal-header">
-                    <div class="terminal-title">سجل التشغيل | Terminal</div>
-                    <div class="terminal-controls">
-                        <button class="btn btn-sm btn-outline" id="clearTerminalBtn">
-                            <i class="fas fa-trash"></i> مسح
+                <div class="control-panel">
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="control-title">رفع ملفات</div>
+                        <div class="control-desc">رفع ملفات Python، JavaScript، ZIP</div>
+                        <button class="btn btn-primary btn-block" onclick="switchSection('files')">
+                            <i class="fas fa-upload"></i> رفع ملفات
                         </button>
-                        <button class="btn btn-sm btn-outline" id="copyTerminalBtn">
-                            <i class="fas fa-copy"></i> نسخ
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="control-title">تشغيل البوت</div>
+                        <div class="control-desc">بدء تشغيل بوت التليجرام</div>
+                        <button class="btn btn-success btn-block" onclick="startBot()">
+                            <i class="fas fa-play"></i> تشغيل الآن
+                        </button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="control-title">الإعدادات</div>
+                        <div class="control-desc">تعديل إعدادات الحساب</div>
+                        <button class="btn btn-primary btn-block" onclick="switchSection('settings')">
+                            <i class="fas fa-sliders-h"></i> الذهاب للإعدادات
                         </button>
                     </div>
                 </div>
-                <div class="terminal-body" id="terminalBody">
-                    <div class="terminal-line success">✅ نظام HostMaster Pro جاهز للعمل</div>
-                    <div class="terminal-line info">📅 تاريخ النظام: 2026</div>
-                    <div class="terminal-line info">⏱ انتظر الأوامر...</div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Settings Section -->
-        <section id="settingsSection" class="section">
-            <div class="section-header">
-                <h1 class="section-title">
-                    <i class="fas fa-user-cog"></i>
-                    إعدادات الحساب
-                </h1>
-                <p class="section-subtitle">
-                    تخصيص حسابك وإعدادات المنصة حسب احتياجاتك
-                </p>
-            </div>
+            </section>
             
-            <!-- Theme Settings -->
-            <div class="theme-settings">
-                <div class="theme-info">
-                    <i class="fas fa-palette theme-icon-large"></i>
-                    <div>
-                        <h3 style="color: var(--text-color); margin-bottom: 5px;">السمة</h3>
-                        <p style="color: var(--text-secondary); font-size: 14px;">قم بتبديل بين الوضع الفاتح والداكن</p>
+            <!-- Files Section -->
+            <section id="filesSection" class="section">
+                <div class="section-header">
+                    <h1 class="section-title">
+                        <i class="fas fa-folder-open"></i>
+                        إدارة الملفات
+                    </h1>
+                    <p class="section-subtitle">
+                        قم برفع وإدارة ملفات بوت التليجرام والملفات البرمجية
+                    </p>
+                </div>
+                
+                <!-- Upload Zone -->
+                <div class="upload-zone" id="uploadZone">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="upload-text">
+                        <h3>اسحب وأفلت الملفات هنا</h3>
+                        <p>أو انقر لاختيار الملفات من جهازك</p>
+                        <p style="font-size: 14px; color: var(--text-secondary);">
+                            المدعوم: .py .js .zip .txt .json .env
+                        </p>
+                    </div>
+                    <input type="file" id="fileInput" multiple class="hidden">
+                </div>
+                
+                <!-- Files Grid -->
+                <div class="files-container" id="filesContainer">
+                    <!-- Files will be loaded here -->
+                </div>
+                
+                <!-- No Files Message -->
+                <div id="noFilesMessage" class="text-center mt-30" style="display: none;">
+                    <i class="fas fa-folder-open" style="font-size: 60px; color: var(--border-color);"></i>
+                    <h3 style="color: var(--text-secondary); margin-top: 15px;">لا توجد ملفات مرفوعة</h3>
+                    <p style="color: var(--text-secondary);">ابدأ برفع أول ملف من خلال منطقة الرفع بالأعلى</p>
+                </div>
+            </section>
+            
+            <!-- Control Panel Section -->
+            <section id="controlSection" class="section">
+                <div class="section-header">
+                    <h1 class="section-title">
+                        <i class="fas fa-cogs"></i>
+                        لوحة التحكم
+                    </h1>
+                    <p class="section-subtitle">
+                        إدارة وتشغيل بوت التليجرام والتحكم الكامل في العمليات
+                    </p>
+                </div>
+                
+                <!-- Control Actions -->
+                <div class="control-panel">
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="control-title">تشغيل البوت</div>
+                        <div class="control-desc">بدء تشغيل ملف البوت الرئيسي</div>
+                        <button class="btn btn-success btn-block" id="startBotBtn">
+                            <i class="fas fa-play"></i> بدء التشغيل
+                        </button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-stop"></i>
+                        </div>
+                        <div class="control-title">إيقاف البوت</div>
+                        <div class="control-desc">إيقاف جميع عمليات البوت</div>
+                        <button class="btn btn-danger btn-block" id="stopBotBtn">
+                            <i class="fas fa-stop"></i> إيقاف التشغيل
+                        </button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="control-title">تثبيت المكتبات</div>
+                        <div class="control-desc">تثبيت مكتبات Python المطلوبة</div>
+                        <button class="btn btn-primary btn-block" id="installLibsBtn">
+                            <i class="fas fa-download"></i> تثبيت الآن
+                        </button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="control-title">عرض الأخطاء</div>
+                        <div class="control-desc">عرض سجل الأخطاء والتحذيرات</div>
+                        <button class="btn btn-warning btn-block" id="showErrorsBtn">
+                            <i class="fas fa-bug"></i> عرض الأخطاء
+                        </button>
                     </div>
                 </div>
-                <div class="theme-toggle" title="تبديل السمة">
-                    <input type="checkbox" id="themeSwitchMain">
-                    <label for="themeSwitchMain"></label>
+                
+                <!-- Terminal -->
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-title">سجل التشغيل | Terminal</div>
+                        <div class="terminal-controls">
+                            <button class="btn btn-sm btn-outline" id="clearTerminalBtn">
+                                <i class="fas fa-trash"></i> مسح
+                            </button>
+                            <button class="btn btn-sm btn-outline" id="copyTerminalBtn">
+                                <i class="fas fa-copy"></i> نسخ
+                            </button>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-line success">✅ نظام HostMaster Pro جاهز للعمل</div>
+                        <div class="terminal-line info">📅 تاريخ النظام: 2026</div>
+                        <div class="terminal-line info">⏱ انتظر الأوامر...</div>
+                    </div>
                 </div>
-            </div>
+            </section>
             
-            <!-- Settings Form -->
-            <form class="settings-form" id="settingsForm">
-                <div class="form-group">
-                    <label class="form-label">
-                        <i class="fas fa-user"></i>
-                        اسم المستخدم
-                    </label>
-                    <input type="text" class="form-control" id="usernameInput" placeholder="اسم المستخدم الحالي">
+            <!-- Settings Section -->
+            <section id="settingsSection" class="section">
+                <div class="section-header">
+                    <h1 class="section-title">
+                        <i class="fas fa-user-cog"></i>
+                        إعدادات الحساب
+                    </h1>
+                    <p class="section-subtitle">
+                        تخصيص حسابك وإعدادات المنصة حسب احتياجاتك
+                    </p>
                 </div>
                 
-                <div class="form-group">
-                    <label class="form-label">
-                        <i class="fas fa-id-card"></i>
-                        الاسم الكامل
-                    </label>
-                    <input type="text" class="form-control" id="fullNameInput" placeholder="الاسم الذي سيظهر في الملفات">
+                <!-- Theme Settings -->
+                <div class="theme-settings">
+                    <div class="theme-info">
+                        <i class="fas fa-palette theme-icon-large"></i>
+                        <div>
+                            <h3 style="color: var(--text-color); margin-bottom: 5px;">السمة</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px;">قم بتبديل بين الوضع الفاتح والداكن</p>
+                        </div>
+                    </div>
+                    <div class="theme-toggle" title="تبديل السمة">
+                        <input type="checkbox" id="themeSwitchMain">
+                        <label for="themeSwitchMain"></label>
+                    </div>
                 </div>
                 
-                <div class="form-group">
-                    <label class="form-label">
-                        <i class="fas fa-birthday-cake"></i>
-                        العمر
-                    </label>
-                    <input type="number" class="form-control" id="ageInput" placeholder="اختياري" min="1" max="120">
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label">
-                        <i class="fas fa-globe"></i>
-                        الدولة
-                    </label>
-                    <select class="form-select" id="countrySelect">
-                        <option value="">اختر الدولة</option>
-                        <option value="SA">🇸🇦 السعودية</option>
-                        <option value="AE">🇦🇪 الإمارات</option>
-                        <option value="EG">🇪🇬 مصر</option>
-                        <option value="KW">🇰🇼 الكويت</option>
-                        <option value="QA">🇶🇦 قطر</option>
-                        <option value="BH">🇧🇭 البحرين</option>
-                        <option value="OM">🇴🇲 عُمان</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label class="form-label">
-                        <i class="fas fa-language"></i>
-                        اللغة
-                    </label>
-                    <select class="form-select" id="languageSelect">
-                        <option value="ar">🇸🇦 العربية</option>
-                        <option value="en">🇺🇸 الإنجليزية</option>
-                    </select>
-                </div>
-                
-                <button type="button" class="btn btn-primary btn-block mt-30" id="saveSettingsBtn">
-                    <i class="fas fa-save"></i> حفظ التغييرات
-                </button>
-            </form>
-        </section>
-    </main>
+                <!-- Settings Form -->
+                <form class="settings-form" id="settingsForm">
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-user"></i>
+                            اسم المستخدم
+                        </label>
+                        <input type="text" class="form-control" id="usernameInput" placeholder="اسم المستخدم الحالي">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-id-card"></i>
+                            الاسم الكامل
+                        </label>
+                        <input type="text" class="form-control" id="fullNameInput" placeholder="الاسم الذي سيظهر في الملفات">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-birthday-cake"></i>
+                            العمر
+                        </label>
+                        <input type="number" class="form-control" id="ageInput" placeholder="اختياري" min="1" max="120">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-globe"></i>
+                            الدولة
+                        </label>
+                        <select class="form-select" id="countrySelect">
+                            <option value="">اختر الدولة</option>
+                            <option value="SA">🇸🇦 السعودية</option>
+                            <option value="AE">🇦🇪 الإمارات</option>
+                            <option value="EG">🇪🇬 مصر</option>
+                            <option value="KW">🇰🇼 الكويت</option>
+                            <option value="QA">🇶🇦 قطر</option>
+                            <option value="BH">🇧🇭 البحرين</option>
+                            <option value="OM">🇴🇲 عُمان</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-language"></i>
+                            اللغة
+                        </label>
+                        <select class="form-select" id="languageSelect">
+                            <option value="ar">🇸🇦 العربية</option>
+                            <option value="en">🇺🇸 الإنجليزية</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="btn btn-primary btn-block mt-30" id="saveSettingsBtn">
+                        <i class="fas fa-save"></i> حفظ التغييرات
+                    </button>
+                </form>
+            </section>
+        </main>
+    </div>
 
     <script>
         // Telegram Configuration
@@ -1349,14 +1608,6 @@
         
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
-            // Hide loading screen
-            setTimeout(() => {
-                document.getElementById('loadingScreen').style.opacity = '0';
-                setTimeout(() => {
-                    document.getElementById('loadingScreen').style.display = 'none';
-                }, 500);
-            }, 1500);
-            
             // Load preferences
             loadPreferences();
             
@@ -1365,6 +1616,34 @@
             
             // Check login status
             checkLoginStatus();
+            
+            // Auth tabs
+            document.querySelectorAll('.auth-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.dataset.tab;
+                    
+                    // Update active tab
+                    document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show corresponding form
+                    document.getElementById('loginForm').classList.remove('active');
+                    document.getElementById('registerForm').classList.remove('active');
+                    document.getElementById(tabId + 'Form').classList.add('active');
+                });
+            });
+            
+            // Login form submission
+            document.getElementById('loginForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await loginUser();
+            });
+            
+            // Register form submission
+            document.getElementById('registerForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                await registerUser();
+            });
             
             // Sidebar toggle
             document.getElementById('menuToggle').addEventListener('click', toggleSidebar);
@@ -1475,7 +1754,9 @@
                 body.dir = 'rtl';
                 
                 // Update section titles
-                document.getElementById('currentSectionTitle').textContent = 'لوحة التحكم';
+                if (document.getElementById('currentSectionTitle')) {
+                    document.getElementById('currentSectionTitle').textContent = 'لوحة التحكم';
+                }
                 
                 // Update nav items
                 document.querySelectorAll('.nav-item[data-section="dashboard"] span').innerHTML = '🏠 الرئيسية';
@@ -1488,7 +1769,9 @@
                 body.dir = 'ltr';
                 
                 // Update section titles
-                document.getElementById('currentSectionTitle').textContent = 'Dashboard';
+                if (document.getElementById('currentSectionTitle')) {
+                    document.getElementById('currentSectionTitle').textContent = 'Dashboard';
+                }
                 
                 // Update nav items
                 document.querySelectorAll('.nav-item[data-section="dashboard"] span').innerHTML = '🏠 Dashboard';
@@ -1498,6 +1781,140 @@
             }
             
             localStorage.setItem('hostmaster_lang', lang);
+        }
+        
+        async function loginUser() {
+            const username = document.getElementById('loginUsername').value.trim();
+            const password = document.getElementById('loginPassword').value;
+            
+            if (!username || !password) {
+                showAuthAlert('يرجى ملء جميع الحقول', 'error');
+                return;
+            }
+            
+            const users = getUsers();
+            const user = users.find(u => u.username === username && u.password === password);
+            
+            if (user) {
+                currentUser = user;
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                
+                // Switch to dashboard
+                document.getElementById('authContainer').style.display = 'none';
+                document.getElementById('dashboardContainer').style.display = 'block';
+                
+                updateUserDisplay();
+                loadFiles();
+                loadSettings();
+                
+                // Add terminal message
+                addTerminalLine(`✅ مرحباً بعودتك ${username}!`, 'success');
+                
+                // Send telegram notification
+                await sendTelegramNotification(`👤 تسجيل دخول: ${username}`);
+                
+            } else {
+                showAuthAlert('اسم المستخدم أو كلمة المرور غير صحيحة', 'error');
+            }
+        }
+        
+        async function registerUser() {
+            const username = document.getElementById('registerUsername').value.trim();
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('registerConfirmPassword').value;
+            
+            if (!username || !password || !confirmPassword) {
+                showAuthAlert('يرجى ملء جميع الحقول', 'error');
+                return;
+            }
+            
+            if (username.length < 3) {
+                showAuthAlert('اسم المستخدم يجب أن يكون 3 أحرف على الأقل', 'error');
+                return;
+            }
+            
+            if (password.length < 6) {
+                showAuthAlert('كلمة المرور يجب أن تكون 6 أحرف على الأقل', 'error');
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                showAuthAlert('كلمات المرور غير متطابقة', 'error');
+                return;
+            }
+            
+            const users = getUsers();
+            if (users.some(u => u.username === username)) {
+                showAuthAlert('اسم المستخدم موجود بالفعل', 'error');
+                return;
+            }
+            
+            // Create new user
+            const newUser = {
+                id: Date.now(),
+                username: username,
+                password: password,
+                fullName: username,
+                age: '',
+                country: 'SA',
+                language: 'ar',
+                createdAt: new Date().toISOString()
+            };
+            
+            users.push(newUser);
+            localStorage.setItem('hosting_users', JSON.stringify(users));
+            
+            currentUser = newUser;
+            localStorage.setItem('currentUser', JSON.stringify(newUser));
+            
+            // Switch to dashboard
+            document.getElementById('authContainer').style.display = 'none';
+            document.getElementById('dashboardContainer').style.display = 'block';
+            
+            updateUserDisplay();
+            loadFiles();
+            loadSettings();
+            
+            // Add terminal message
+            addTerminalLine(`🎉 تم إنشاء حساب جديد: ${username}`, 'success');
+            
+            // Send telegram notification
+            await sendTelegramNotification(`🆕 حساب جديد: ${username}`);
+            
+            // Switch to login tab for next time
+            document.querySelector('.auth-tab[data-tab="login"]').click();
+        }
+        
+        function showAuthAlert(message, type = 'error') {
+            const alert = document.getElementById('authAlert');
+            const alertText = document.getElementById('authAlertText');
+            
+            alertText.textContent = message;
+            alert.className = `alert alert-${type}`;
+            alert.style.display = 'flex';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
+        }
+        
+        function checkLoginStatus() {
+            const savedUser = localStorage.getItem('currentUser');
+            if (savedUser) {
+                try {
+                    currentUser = JSON.parse(savedUser);
+                    
+                    // Show dashboard
+                    document.getElementById('authContainer').style.display = 'none';
+                    document.getElementById('dashboardContainer').style.display = 'block';
+                    
+                    updateUserDisplay();
+                    loadFiles();
+                    loadSettings();
+                } catch (e) {
+                    logoutUser();
+                }
+            }
         }
         
         function toggleSidebar() {
@@ -1522,43 +1939,14 @@
                 'settings': currentLanguage === 'ar' ? 'الإعدادات' : 'Settings'
             };
             
-            document.getElementById('currentSectionTitle').textContent = titles[sectionId];
+            if (document.getElementById('currentSectionTitle')) {
+                document.getElementById('currentSectionTitle').textContent = titles[sectionId];
+            }
             
             // Load data for section
             if (sectionId === 'files') {
                 loadFiles();
             } else if (sectionId === 'settings') {
-                loadSettings();
-            }
-        }
-        
-        function checkLoginStatus() {
-            const savedUser = localStorage.getItem('currentUser');
-            if (savedUser) {
-                try {
-                    currentUser = JSON.parse(savedUser);
-                    updateUserDisplay();
-                    loadFiles();
-                    loadSettings();
-                } catch (e) {
-                    logoutUser();
-                }
-            } else {
-                // Create default user if none exists
-                const defaultUser = {
-                    id: Date.now(),
-                    username: 'admin',
-                    fullName: 'مدير النظام',
-                    age: '',
-                    country: 'SA',
-                    language: 'ar',
-                    createdAt: new Date().toISOString()
-                };
-                
-                currentUser = defaultUser;
-                localStorage.setItem('currentUser', JSON.stringify(defaultUser));
-                updateUserDisplay();
-                loadFiles();
                 loadSettings();
             }
         }
@@ -1569,8 +1957,10 @@
             const displayName = currentUser.fullName || currentUser.username;
             const firstLetter = displayName.charAt(0);
             
-            document.getElementById('userName').textContent = displayName;
-            document.getElementById('userAvatar').textContent = firstLetter;
+            if (document.getElementById('userName')) {
+                document.getElementById('userName').textContent = displayName;
+                document.getElementById('userAvatar').textContent = firstLetter;
+            }
         }
         
         async function handleFileUpload(files) {
@@ -1622,22 +2012,28 @@
             if (!currentUser) return;
             
             userFiles = getUserFiles(currentUser.id);
-            document.getElementById('fileCount').textContent = userFiles.length;
+            if (document.getElementById('fileCount')) {
+                document.getElementById('fileCount').textContent = userFiles.length;
+            }
             
             const totalSize = userFiles.reduce((sum, file) => sum + file.size, 0);
             const storagePercent = Math.min(Math.round((totalSize / (10 * 1024 * 1024 * 1024)) * 100), 100);
-            document.getElementById('storageUsage').textContent = `${storagePercent}%`;
+            if (document.getElementById('storageUsage')) {
+                document.getElementById('storageUsage').textContent = `${storagePercent}%`;
+            }
             
             const container = document.getElementById('filesContainer');
             const noFilesMessage = document.getElementById('noFilesMessage');
             
+            if (!container) return;
+            
             if (userFiles.length === 0) {
                 container.innerHTML = '';
-                noFilesMessage.style.display = 'block';
+                if (noFilesMessage) noFilesMessage.style.display = 'block';
                 return;
             }
             
-            noFilesMessage.style.display = 'none';
+            if (noFilesMessage) noFilesMessage.style.display = 'none';
             container.innerHTML = '';
             
             userFiles.forEach(file => {
@@ -1751,6 +2147,8 @@
         
         function addTerminalLine(message, type = 'info') {
             const terminal = document.getElementById('terminalBody');
+            if (!terminal) return;
+            
             const line = document.createElement('div');
             line.className = `terminal-line ${type}`;
             line.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
@@ -1762,13 +2160,19 @@
         }
         
         function clearTerminal() {
-            document.getElementById('terminalBody').innerHTML = '';
+            const terminal = document.getElementById('terminalBody');
+            if (!terminal) return;
+            
+            terminal.innerHTML = '';
             terminalLines = [];
             addTerminalLine('🗑 تم مسح سجل التشغيل', 'info');
         }
         
         function copyTerminal() {
-            const terminalText = document.getElementById('terminalBody').innerText;
+            const terminal = document.getElementById('terminalBody');
+            if (!terminal) return;
+            
+            const terminalText = terminal.innerText;
             navigator.clipboard.writeText(terminalText).then(() => {
                 addTerminalLine('📋 تم نسخ سجل التشغيل', 'success');
             });
@@ -1777,11 +2181,13 @@
         function loadSettings() {
             if (!currentUser) return;
             
-            document.getElementById('usernameInput').value = currentUser.username;
-            document.getElementById('fullNameInput').value = currentUser.fullName || '';
-            document.getElementById('ageInput').value = currentUser.age || '';
-            document.getElementById('countrySelect').value = currentUser.country || '';
-            document.getElementById('languageSelect').value = currentLanguage;
+            if (document.getElementById('usernameInput')) {
+                document.getElementById('usernameInput').value = currentUser.username;
+                document.getElementById('fullNameInput').value = currentUser.fullName || '';
+                document.getElementById('ageInput').value = currentUser.age || '';
+                document.getElementById('countrySelect').value = currentUser.country || '';
+                document.getElementById('languageSelect').value = currentLanguage;
+            }
         }
         
         function saveSettings() {
@@ -1802,6 +2208,15 @@
             currentUser.country = country;
             
             localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            
+            // Update users list
+            const users = getUsers();
+            const userIndex = users.findIndex(u => u.id === currentUser.id);
+            if (userIndex !== -1) {
+                users[userIndex] = {...currentUser};
+                localStorage.setItem('hosting_users', JSON.stringify(users));
+            }
+            
             updateUserDisplay();
             
             if (language !== currentLanguage) {
@@ -1820,8 +2235,22 @@
             
             localStorage.removeItem('currentUser');
             currentUser = null;
+            
+            // Switch to auth container
+            document.getElementById('authContainer').style.display = 'flex';
+            document.getElementById('dashboardContainer').style.display = 'none';
+            
+            // Clear forms
+            document.getElementById('loginUsername').value = '';
+            document.getElementById('loginPassword').value = '';
+            document.getElementById('registerUsername').value = '';
+            document.getElementById('registerPassword').value = '';
+            document.getElementById('registerConfirmPassword').value = '';
+            
+            // Switch to login tab
+            document.querySelector('.auth-tab[data-tab="login"]').click();
+            
             alert(currentLanguage === 'ar' ? 'تم تسجيل الخروج' : 'Logged out successfully');
-            location.reload();
         }
         
         // Storage functions
