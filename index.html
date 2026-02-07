@@ -25,12 +25,17 @@
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:url" content="https://hostingtelegramfacebook.github.io/Hosting_bot/">
     <meta property="og:site_name" content="HostMaster Pro">
+    <meta property="og:image" content="./1000010437.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="HostMaster Pro - منصة استضافة بوتات تليجرام">
     
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="HostMaster Pro - منصة استضافة بوتات تليجرام المجانية">
     <meta name="twitter:description" content="استضافة مجانية احترافية لبوتات تليجرام، ملفات بايثون، جافاسكريبت">
     <meta name="twitter:site" content="@HostMasterPro">
+    <meta name="twitter:image" content="./1000010437.png">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -40,6 +45,7 @@
         "name": "HostMaster Pro",
         "description": "منصة استضافة مجانية احترافية لبوتات تليجرام وملفات البرمجة",
         "url": "https://hostingtelegramfacebook.github.io/Hosting_bot/",
+        "image": "./1000010437.png",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Any",
         "offers": {
@@ -55,6 +61,10 @@
         "publisher": {
             "@type": "Organization",
             "name": "HostMaster Pro",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "./1000010437.png"
+            },
             "url": "https://hostingtelegramfacebook.github.io/Hosting_bot/"
         },
         "inLanguage": ["ar", "en"],
@@ -77,10 +87,10 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="icon" type="image/x-icon" href="./1000010437.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./1000010437.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./1000010437.png">
+    <link rel="shortcut icon" href="./1000010437.png">
     
     <!-- Sitemap and RSS -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -309,17 +319,22 @@
         .brand-logo {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: transparent;
+            border: 2px solid var(--primary-color);
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
+            overflow: hidden;
+            padding: 5px;
         }
         
-        .brand-logo i {
-            font-size: 36px;
-            color: white;
+        .brand-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            object-fit: contain;
         }
         
         .brand-name {
@@ -519,16 +534,21 @@
         .nav-logo {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: transparent;
+            border: 2px solid var(--primary-color);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            padding: 3px;
         }
         
-        .nav-logo i {
-            color: white;
-            font-size: 18px;
+        .nav-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            object-fit: contain;
         }
         
         .nav-title {
@@ -867,10 +887,6 @@
                 height: 60px;
             }
             
-            .brand-logo i {
-                font-size: 28px;
-            }
-            
             .brand-name {
                 font-size: 24px;
             }
@@ -892,6 +908,11 @@
             .language-switcher {
                 top: 10px;
                 left: 10px;
+            }
+            
+            .nav-logo {
+                width: 35px;
+                height: 35px;
             }
         }
         
@@ -1038,7 +1059,7 @@
             <div class="auth-box">
                 <div class="brand">
                     <div class="brand-logo">
-                        <i class="fas fa-server"></i>
+                        <img src="./1000010437.png" alt="HostMaster Pro Logo">
                     </div>
                     <h1 class="brand-name">HostMaster Pro</h1>
                     <p class="brand-tagline" id="tagline">منصة استضافة احترافية لبوتات تليجرام والملفات البرمجية</p>
@@ -1154,7 +1175,7 @@
         <nav class="top-nav">
             <div class="nav-brand">
                 <div class="nav-logo">
-                    <i class="fas fa-server"></i>
+                    <img src="./1000010437.png" alt="HostMaster Pro Logo">
                 </div>
                 <div>
                     <div class="nav-title">HostMaster Pro</div>
